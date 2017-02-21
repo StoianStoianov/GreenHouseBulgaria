@@ -40,7 +40,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contracts\IServiceService.cs" />
+    <Compile Include="Contracts\ISubscriptionService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceService.cs" />
+    <Compile Include="SubscriptionService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GreenHouseBulgaria.Data\GreenHouseBulgaria.Data.csproj">
+      <Project>{648BCD0D-FDD5-47AD-871A-D967E8A3F34E}</Project>
+      <Name>GreenHouseBulgaria.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GreenHouseBulgaria.Models\GreenHouseBulgaria.Models.csproj">
+      <Project>{5DE2B72E-7707-45B2-9A6B-D9C9B37CD402}</Project>
+      <Name>GreenHouseBulgaria.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

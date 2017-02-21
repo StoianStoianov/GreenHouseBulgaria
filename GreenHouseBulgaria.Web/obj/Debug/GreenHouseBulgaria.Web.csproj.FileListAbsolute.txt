@@ -84,3 +84,14 @@ C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHou
 C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Web\bin\GreenHouseBulgaria.Models.dll
 C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Web\bin\GreenHouseBulgaria.Data.pdb
 C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Web\bin\GreenHouseBulgaria.Models.pdb
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Web\bin\AutoMapper.dll
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Web\bin\GreenHouseBulgaria.Services.dll
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Web\bin\Ninject.dll
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Web\bin\Ninject.Web.Common.dll
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Web\bin\Ninject.Web.Mvc.dll
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Web\bin\WebActivatorEx.dll
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Web\bin\GreenHouseBulgaria.Services.pdb
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Web\bin\AutoMapper.xml
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Web\bin\Ninject.xml
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Web\bin\Ninject.Web.Common.xml
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Web\bin\Ninject.Web.Mvc.xml
