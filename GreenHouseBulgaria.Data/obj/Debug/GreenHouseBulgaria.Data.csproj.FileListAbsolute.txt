@@ -1,0 +1,16 @@
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Data\bin\Debug\GreenHouseBulgaria.Data.dll.config
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Data\bin\Debug\GreenHouseBulgaria.Data.dll
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Data\bin\Debug\GreenHouseBulgaria.Data.pdb
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Data\bin\Debug\EntityFramework.dll
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Data\bin\Debug\GreenHouseBulgaria.Models.dll
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Data\bin\Debug\GreenHouseBulgaria.Models.pdb
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Data\bin\Debug\EntityFramework.xml
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Data\obj\Debug\GreenHouseBulgaria.Data.csprojResolveAssemblyReference.cache
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Data\obj\Debug\GreenHouseBulgaria.Data.dll
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Data\obj\Debug\GreenHouseBulgaria.Data.pdb

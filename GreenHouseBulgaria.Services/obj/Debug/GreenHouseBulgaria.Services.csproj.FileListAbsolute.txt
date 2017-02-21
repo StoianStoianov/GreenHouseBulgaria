@@ -1,0 +1,5 @@
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Services\bin\Debug\GreenHouseBulgaria.Services.dll
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Services\bin\Debug\GreenHouseBulgaria.Services.pdb
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Services\obj\Debug\GreenHouseBulgaria.Services.dll
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Services\obj\Debug\GreenHouseBulgaria.Services.pdb
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Services\obj\Debug\GreenHouseBulgaria.Services.csprojResolveAssemblyReference.cache

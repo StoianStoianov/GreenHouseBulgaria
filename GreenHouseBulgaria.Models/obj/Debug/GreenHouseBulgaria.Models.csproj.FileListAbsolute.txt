@@ -1,0 +1,13 @@
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Models\bin\Debug\GreenHouseBulgaria.Models.dll.config
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Models\bin\Debug\GreenHouseBulgaria.Models.dll
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Models\bin\Debug\GreenHouseBulgaria.Models.pdb
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Models\bin\Debug\EntityFramework.dll
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Models\bin\Debug\EntityFramework.xml
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Models\obj\Debug\GreenHouseBulgaria.Models.dll
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Models\obj\Debug\GreenHouseBulgaria.Models.pdb
