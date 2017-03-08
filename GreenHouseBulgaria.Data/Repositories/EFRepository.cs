@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -98,6 +99,21 @@ namespace GreenHouseBulgaria.Data.Repositories
         public void Dispose()
         {
             this.Context.Dispose();
+        }
+
+        public IQueryable<T> FindBy(Expression<Func<T, bool>> predicate, params Expression<Func<T, object>>[] includes)
+        {
+            IQueryable<T> query = DbSet.AsNoTracking().Where(predicate);
+
+            if (null != includes)
+            {
+                foreach (var include in includes)
+                {
+                    query = query.AsNoTracking().Include(include);
+                }
+            }
+            IQueryable<T> result = query.AsQueryable();
+            return result;
         }
     }
 }

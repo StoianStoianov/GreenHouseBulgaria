@@ -8,6 +8,7 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using GreenHouseBulgaria.Data;
 using GreenHouseBulgaria.Data.Migrations;
+using GreenHouseBulgaria.Web.App_Start;
 
 namespace GreenHouseBulgaria.Web
 {
@@ -16,6 +17,7 @@ namespace GreenHouseBulgaria.Web
         protected void Application_Start()
         {
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<GreenHouseBulgariaDbContext, Configuration>());
+            AutoMapperConfig.CreateMappings();
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);

@@ -95,3 +95,4 @@ C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHou
 C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Web\bin\Ninject.xml
 C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Web\bin\Ninject.Web.Common.xml
 C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Web\bin\Ninject.Web.Mvc.xml
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Web\bin\BeginCollectionItem.dll

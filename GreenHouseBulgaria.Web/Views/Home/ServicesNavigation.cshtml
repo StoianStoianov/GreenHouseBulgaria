@@ -1,0 +1,31 @@
+﻿@model IList<GreenHouseBulgaria.Web.ViewModels.ServiceViewModel>
+@{
+    ViewBag.Title = "ServicesNavigation";
+}
+<style>
+    .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+ }
+</style>
+
+<ul class="nav navbar-nav">
+
+    <li>
+        <a href="">Начало</a>
+    </li>
+    <li>
+        <a href="">За нас</a>
+    </li>
+    <li class="dropdown">
+        <a href="">Услуги</a>
+        <ul class="dropdown-menu">
+
+            @foreach (var service in @Model)
+            {
+                <li>@Html.ActionLink(@service.Title, "GetService", "PublicServices", new { serviceId = service.Id }, null) </li>
+            }
+
+        </ul>
+    </li>
+</ul>

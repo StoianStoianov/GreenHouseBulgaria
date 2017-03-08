@@ -9,7 +9,7 @@ using GreenHouseBulgaria.Models;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using GreenHouseBulgaria.Web.Models;
+using GreenHouseBulgaria.Web.ViewModels;
 
 namespace GreenHouseBulgaria.Web.Controllers
 {

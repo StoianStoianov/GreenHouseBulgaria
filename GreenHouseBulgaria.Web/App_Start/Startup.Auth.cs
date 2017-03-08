@@ -7,7 +7,7 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
-using GreenHouseBulgaria.Web.Models;
+using GreenHouseBulgaria.Web.ViewModels;
 
 namespace GreenHouseBulgaria.Web
 {

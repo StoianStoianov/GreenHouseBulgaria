@@ -4,6 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using GreenHouseBulgaria.Services.Contracts;
+using AutoMapper;
+using GreenHouseBulgaria.Models;
+using GreenHouseBulgaria.Web.ViewModels;
 
 namespace GreenHouseBulgaria.Web.Controllers
 {
@@ -33,6 +36,13 @@ namespace GreenHouseBulgaria.Web.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+
+        public ActionResult ServicesNavigation()
+        {
+            var services = this.service.GetAllServices().ToList();
+            var servicesViewModels = Mapper.Map<List<Service>, List<ServiceViewModel>>(services);
+            return PartialView(servicesViewModels);
         }
     }
 }
