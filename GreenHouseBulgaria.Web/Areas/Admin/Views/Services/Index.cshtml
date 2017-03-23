@@ -1,8 +1,32 @@
-﻿
+﻿@model WebGrid
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
 
-@Html.ActionLink("Направи услуга","CreateService")
+
+<p>
+    @Html.ActionLink("Направи услуга", "CreateService")
+</p>
+
+@Model.GetHtml(columns: Model.Columns(
+
+    Model.Column("Id"),
+    Model.Column("Title"),
+    Model.Column("",
+                    header: "Actions",
+        format:@<text>
+                        <span class="edit">
+                            @Html.ActionLink("Промени", "UpdateService", new { id = item.Id }, new { title = "update" })
+                        </span>
+                        <span class="right">
+                            @Html.ActionLink("Изтрий", "DeleteService", new { id = item.Id }, new { title = "delete" })
+                        </span>
+        </text>)
+))
+
+
+
+
+
+

@@ -34,10 +34,17 @@ namespace GreenHouseBulgaria.Services
             }
             
             this.serviceRepository.SaveChanges();
+
         }
 
         public Service GetServiceById(int serviceId)
         {
+            var service = this.serviceRepository.GetById(serviceId);
+
+            if (service == null)
+            {
+                throw new Exception("Грешка");
+            }
             return this.serviceRepository.GetById(serviceId);
         }
 
@@ -68,6 +75,21 @@ namespace GreenHouseBulgaria.Services
             }
             this.servicePriceRepository.SaveChanges();       
             this.serviceRepository.Update(service);
+            this.serviceRepository.SaveChanges();
+        }
+
+        public void DeleteService(int serviceId)
+        {
+            var services = this.servicePriceRepository.FindBy(serPr => serPr.ServiceId == serviceId).ToList();
+            
+
+            foreach (var servicePrice in services)
+            {           
+                servicePriceRepository.Delete(servicePrice);
+            }
+
+            this.servicePriceRepository.SaveChanges();
+            this.serviceRepository.Delete(serviceId);          
             this.serviceRepository.SaveChanges();
         }
     }

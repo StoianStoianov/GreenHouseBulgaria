@@ -4,31 +4,28 @@
     ViewBag.Title = "GetService";
 }
 
-<h2>GetService</h2>
+
 
 <div>
-    <h4>ServiceViewModel</h4>
-    <hr />
-    <dl class="dl-horizontal">       
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Title)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
-
-        <dd>
-            @Html.Raw(Model.Description)
-        </dd>
-
-    </dl>
+      
+    <h2>@Html.DisplayFor(model => model.Title)</h2>                                    
+    @Html.Raw("<pre>" + @Model.Content + "</pre>")         
 </div>
+
+
+    <div class="row">
+       @foreach (var price in Model.ServicePriceViewModels)
+       {
+           <div class="col-md-4">
+               <div>@price.Title</div>
+               <div>@price.Description</div>
+               <div>@price.Price</div>
+               <div>@Html.ActionLink("Поръчай", "SubscribeForService", "Subscription", new { servicePriceId = price.Id},null) </div>
+           </div>
+       }
+
+    </div>
+
 <p>
     @Html.ActionLink("Back to List", "Index")
 </p>

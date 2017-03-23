@@ -11,7 +11,7 @@ using GreenHouseBulgaria.Web.ViewModels;
 namespace GreenHouseBulgaria.Web.Controllers
 {
     [Authorize]
-    public class ManageController : Controller
+    public class ManageController : BaseClientController
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;

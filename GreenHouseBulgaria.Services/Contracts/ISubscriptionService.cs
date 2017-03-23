@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GreenHouseBulgaria.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,10 @@ namespace GreenHouseBulgaria.Services.Contracts
 {
     public interface ISubscriptionService
     {
+        IQueryable<Subscription> GetAllSubscriptionServices();
+
+        Subscription GetSubscription(int subscriptionId);
+
+        void AddSubscription(Subscription subscriptionService);
     }
 }

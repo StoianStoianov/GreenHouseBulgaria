@@ -10,17 +10,17 @@ using GreenHouseBulgaria.Web.ViewModels;
 
 namespace GreenHouseBulgaria.Web.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseClientController
     {
-        private IServiceService service;
+        private IServiceService serviceSevice;
 
-        public HomeController(IServiceService service)
+        public HomeController(IServiceService serviceSevice)
         {
-            this.service = service;
+            this.serviceSevice = serviceSevice;
         }
         public ActionResult Index()
         {
-            var services = this.service.GetAllServices().ToList();
+            var services = this.serviceSevice.GetAllServices().ToList();
             return View(services);
         }
 
@@ -40,7 +40,7 @@ namespace GreenHouseBulgaria.Web.Controllers
 
         public ActionResult ServicesNavigation()
         {
-            var services = this.service.GetAllServices().ToList();
+            var services = this.serviceSevice.GetAllServices().ToList();
             var servicesViewModels = Mapper.Map<List<Service>, List<ServiceViewModel>>(services);
             return PartialView(servicesViewModels);
         }

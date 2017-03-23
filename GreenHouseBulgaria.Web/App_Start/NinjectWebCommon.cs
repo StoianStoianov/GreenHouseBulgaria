@@ -69,6 +69,7 @@ namespace GreenHouseBulgaria.Web.App_Start
             kernel.Bind<IGreenHouseBulgariaDbContext>().To<GreenHouseBulgariaDbContext>();
             kernel.Bind<IServiceService>().To<ServiceService>();
             kernel.Bind<ISubscriptionService>().To<SubscriptionService>();
+            kernel.Bind<IServicePriceService>().To<ServicePriceService>();
             kernel.Bind(typeof(IRepository<>)).To(typeof(EFRepository<>));
         }        
     }

@@ -13,11 +13,14 @@ namespace GreenHouseBulgaria.Models
         public string SubscriberName { get; set; }
 
         public string Adress { get; set; }
+
         public string TelephoneNumber { get; set; }
 
-        public int ServiceId { get; set; }
+        public DateTime SubscriptionDateTime { get; set; }
 
-        public virtual Service Service { get; set; }
+        public int ServicePriceId { get; set; }
+
+        public virtual ServicePrice ServicePrice { get; set; }
 
 
     }

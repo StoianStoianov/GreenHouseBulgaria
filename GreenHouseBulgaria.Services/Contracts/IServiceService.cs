@@ -16,6 +16,8 @@ namespace GreenHouseBulgaria.Services.Contracts
 
         void UpdateServce(Service service);
 
+        void DeleteService(int serviceId);
+
 
     }
 }

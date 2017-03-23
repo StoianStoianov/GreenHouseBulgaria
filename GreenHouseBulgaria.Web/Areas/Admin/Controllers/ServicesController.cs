@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Helpers;
 using System.Web.Mvc;
 using GreenHouseBulgaria.Web.ViewModels;
 using AutoMapper;
@@ -10,6 +11,7 @@ using GreenHouseBulgaria.Services.Contracts;
 
 namespace GreenHouseBulgaria.Web.Areas.Admin.Controllers
 {
+    [Authorize(Roles = "admin")]
     public class ServicesController : Controller
     {
         private IServiceService serviceSevice;
@@ -21,7 +23,10 @@ namespace GreenHouseBulgaria.Web.Areas.Admin.Controllers
         // GET: Admin/Services
         public ActionResult Index()
         {
-            return View();
+            var services = this.serviceSevice.GetAllServices().ToList();
+            var servicesViewModels = Mapper.Map<List<Service>, List<ServiceViewModel>>(services);
+            WebGrid grid = new WebGrid(servicesViewModels);
+            return View(grid);
         }
        
 
@@ -62,13 +67,28 @@ namespace GreenHouseBulgaria.Web.Areas.Admin.Controllers
 
             var service = Mapper.Map<ServiceViewModel, Service>(serviceViewModel);
             this.serviceSevice.UpdateServce(service);
-            return View();
+            return RedirectToAction("Index");
+        }
+        [HttpGet]
+        public ActionResult DeleteService(int id)
+        {
+            var service = this.serviceSevice.GetServiceById(id);
+            var serviceViewModel = Mapper.Map<Service, ServiceViewModel>(service);
+            return View(serviceViewModel);
+
         }
 
-        public ActionResult DeleteService()
+        [HttpPost]
+        public ActionResult DeleteService(ServiceViewModel serviceViewModel)
         {
-            return View();
+            if (!ModelState.IsValid)
+            {
+                return View(serviceViewModel);
+            }
 
+            var service = Mapper.Map<ServiceViewModel, Service>(serviceViewModel);
+            this.serviceSevice.DeleteService(service.Id);
+            return RedirectToAction("Index");
         }
 
         public ActionResult RenderServicePrice()

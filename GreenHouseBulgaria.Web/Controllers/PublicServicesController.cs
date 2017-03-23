@@ -10,7 +10,7 @@ using GreenHouseBulgaria.Web.ViewModels;
 
 namespace GreenHouseBulgaria.Web.Controllers
 {
-    public class PublicServicesController : Controller
+    public class PublicServicesController : BaseClientController
     {
         private IServiceService service;
 
@@ -27,10 +27,7 @@ namespace GreenHouseBulgaria.Web.Controllers
         {
             var service = this.service.GetServiceById(serviceId);
 
-            if (service == null)
-            {
-                throw new HttpException(400, "Bad Request");
-            }
+            
         
             var serviceViewModel = Mapper.Map<Service, ServiceViewModel>(service);
             return View(serviceViewModel);
