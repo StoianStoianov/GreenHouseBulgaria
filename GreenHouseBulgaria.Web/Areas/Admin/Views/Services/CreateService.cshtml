@@ -4,6 +4,13 @@
     ViewBag.Title = "CreateService";
 }
 
+<style>
+    textarea {
+    max-width: 500px;
+}
+
+</style>
+
 @using (Html.BeginForm()) 
 {
     @Html.AntiForgeryToken()

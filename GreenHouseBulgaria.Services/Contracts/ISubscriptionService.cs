@@ -9,7 +9,7 @@ namespace GreenHouseBulgaria.Services.Contracts
 {
     public interface ISubscriptionService
     {
-        IQueryable<Subscription> GetAllSubscriptionServices();
+        IQueryable<Subscription> GetAllSubscriptions();
 
         Subscription GetSubscription(int subscriptionId);
 

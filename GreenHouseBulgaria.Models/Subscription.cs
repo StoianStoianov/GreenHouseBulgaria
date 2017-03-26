@@ -22,6 +22,6 @@ namespace GreenHouseBulgaria.Models
 
         public virtual ServicePrice ServicePrice { get; set; }
 
-
+        public bool IsChecked { get; set; }
     }
 }

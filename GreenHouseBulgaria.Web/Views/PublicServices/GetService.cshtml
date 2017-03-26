@@ -4,11 +4,19 @@
     ViewBag.Title = "GetService";
 }
 
+<style>   
+    pre {
+        white-space: pre-wrap;
+        border: none;
+        background-color: #fff;
+        word-break: keep-all;
 
+    }
+</style>
 
 <div>
       
-    <h2>@Html.DisplayFor(model => model.Title)</h2>                                    
+    <h2 class="text-center">@Html.DisplayFor(model => model.Title)</h2>                                    
     @Html.Raw("<pre>" + @Model.Content + "</pre>")         
 </div>
 

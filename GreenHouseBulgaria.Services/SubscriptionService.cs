@@ -17,7 +17,7 @@ namespace GreenHouseBulgaria.Services
         {
             this.subscriptionRepository = subscriptionServiceRepository;
         }
-        public IQueryable<Subscription> GetAllSubscriptionServices()
+        public IQueryable<Subscription> GetAllSubscriptions()
         {
             return this.subscriptionRepository.All();
         }

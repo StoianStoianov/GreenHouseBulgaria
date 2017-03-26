@@ -47,7 +47,7 @@ namespace GreenHouseBulgaria.Web.Controllers
             var subscription = Mapper.Map<SubscriptionViewModel, Subscription>(subscriptionViewModel);
             this.subscriptionService.AddSubscription(subscription);
 
-            return View();
+            return View("SuccessSubscribtion");
         }
 
     }
