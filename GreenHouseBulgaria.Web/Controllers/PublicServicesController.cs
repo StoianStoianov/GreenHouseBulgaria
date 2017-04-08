@@ -33,5 +33,13 @@ namespace GreenHouseBulgaria.Web.Controllers
             return View(serviceViewModel);
 
         }
+
+        public ActionResult GetAllServices()
+        {
+            var services = this.service.GetAllServices().ToList();
+            var servicesViewModels = Mapper.Map<List<Service>, List<ServiceViewModel>>(services);
+            return View(servicesViewModels);
+
+        }
     }
 }

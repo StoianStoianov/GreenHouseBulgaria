@@ -36,7 +36,6 @@ namespace GreenHouseBulgaria.Web.Areas.Admin.Controllers
         public ActionResult CheckSubscription(SubscriptionViewModel subscriptionViewModel)
         {
             return View();
-
         }
 
 

@@ -12,7 +12,7 @@ namespace GreenHouseBulgaria.Web.ViewModels
     {
         public ServiceViewModel()
         {
-            this.ServicePriceViewModels = new List<ServicePriceViewModel>();
+            this.ServicePriceViewModels = new List<ServicePriceViewModel>();            
         }
         public int Id { get; set; }
         [Required]
@@ -22,6 +22,8 @@ namespace GreenHouseBulgaria.Web.ViewModels
         [AllowHtml]
         [DisplayName("Съдържание")]
         public string Content { get; set; }      
+
+        public ImageViewModel Image { get; set; }
         public IList<ServicePriceViewModel> ServicePriceViewModels { get; set; }
     }
 }

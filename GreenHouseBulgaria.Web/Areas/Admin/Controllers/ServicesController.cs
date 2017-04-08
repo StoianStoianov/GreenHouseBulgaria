@@ -36,13 +36,20 @@ namespace GreenHouseBulgaria.Web.Areas.Admin.Controllers
             return View(new ServiceViewModel());
         }
         [HttpPost]
-        public ActionResult CreateService(ServiceViewModel serviceViewModel)
+        public ActionResult CreateService(ServiceViewModel serviceViewModel, HttpPostedFileBase imageBytes)
         {
             if (!ModelState.IsValid)
             {
                 return View(serviceViewModel);
 
             }
+            if (imageBytes != null)
+            {
+                serviceViewModel.Image = new ImageViewModel();
+                serviceViewModel.Image.ImageBytes = new byte[imageBytes.ContentLength];
+                imageBytes.InputStream.Read(serviceViewModel.Image.ImageBytes, 0, imageBytes.ContentLength);
+            }
+
             var service = Mapper.Map<ServiceViewModel, Service>(serviceViewModel);
             this.serviceSevice.AddService(service);
 

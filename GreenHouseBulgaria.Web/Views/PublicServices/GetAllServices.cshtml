@@ -1,0 +1,26 @@
+﻿@model List<GreenHouseBulgaria.Web.ViewModels.ServiceViewModel>
+@{
+    ViewBag.Title = "GetAllServices";
+}
+
+<h2>GetAllServices</h2>
+
+@foreach (var service in Model)
+{
+    <div>
+        <h3>@service.Title</h3>
+        @foreach (var servicePrice in service.ServicePriceViewModels)
+        {
+            <div>
+                <h4>@servicePrice.Title</h4>
+                <div>@servicePrice.Description</div>
+                <div>@servicePrice.Price</div>
+                <div>@Html.ActionLink("Поръчай", "SubscribeForService", "Subscription", new { servicePriceId = servicePrice.Id }, null)</div>
+            </div>
+        }
+       
+
+    </div>
+
+
+}

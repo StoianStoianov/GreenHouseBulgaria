@@ -26,5 +26,7 @@ namespace GreenHouseBulgaria.Models
             get { return this.servicePrices; }
             set { this.servicePrices = value; }
         }
+        public int? ImageId { get; set; }
+        public virtual Image Image { get; set; }
     }
 }
