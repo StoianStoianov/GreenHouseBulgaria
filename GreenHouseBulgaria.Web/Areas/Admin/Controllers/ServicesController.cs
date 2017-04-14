@@ -65,11 +65,18 @@ namespace GreenHouseBulgaria.Web.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public ActionResult UpdateService(ServiceViewModel serviceViewModel)
+        public ActionResult UpdateService(ServiceViewModel serviceViewModel, HttpPostedFileBase imageBytes)
         {
             if (!ModelState.IsValid)
             {
                 return View(serviceViewModel);
+            }
+
+            if (imageBytes != null)
+            {
+                serviceViewModel.Image = new ImageViewModel();
+                serviceViewModel.Image.ImageBytes = new byte[imageBytes.ContentLength];
+                imageBytes.InputStream.Read(serviceViewModel.Image.ImageBytes, 0, imageBytes.ContentLength);
             }
 
             var service = Mapper.Map<ServiceViewModel, Service>(serviceViewModel);

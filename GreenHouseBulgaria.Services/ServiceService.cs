@@ -13,11 +13,13 @@ namespace GreenHouseBulgaria.Services
     {
         private readonly IRepository<Service> serviceRepository;
         private readonly IRepository<ServicePrice> servicePriceRepository;
+        private readonly IRepository<Image> imageRepository;
 
-        public ServiceService(IRepository<Service> serviceRepository, IRepository<ServicePrice> servicePriceInfoRepository)
+        public ServiceService(IRepository<Service> serviceRepository, IRepository<ServicePrice> servicePriceInfoRepository, IRepository<Image> imageRepository)
         {
             this.serviceRepository = serviceRepository;
             this.servicePriceRepository = servicePriceInfoRepository;
+            this.imageRepository = imageRepository;
         }
         public IQueryable<Service> GetAllServices()
         {
@@ -73,6 +75,24 @@ namespace GreenHouseBulgaria.Services
                     servicePriceRepository.Delete(servicePrice.Id);
                 }
             }
+
+            if (service.Image != null)
+            {
+                var image = this.imageRepository.GetById(service.Id);
+                if (image != null)
+                {
+                    service.Image.Id = image.Id;
+                    image.ImageBytes = service.Image.ImageBytes;
+                    this.imageRepository.Update(image);
+                }
+                else
+                {
+                    service.Image.Id = service.Id;
+                    this.imageRepository.Add(service.Image);
+                }               
+                this.imageRepository.SaveChanges();
+            }
+
             this.servicePriceRepository.SaveChanges();       
             this.serviceRepository.Update(service);
             this.serviceRepository.SaveChanges();
@@ -81,13 +101,19 @@ namespace GreenHouseBulgaria.Services
         public void DeleteService(int serviceId)
         {
             var services = this.servicePriceRepository.FindBy(serPr => serPr.ServiceId == serviceId).ToList();
-            
+            var image = this.imageRepository.FindBy(img => img.Id == serviceId).FirstOrDefault();
 
             foreach (var servicePrice in services)
             {           
                 servicePriceRepository.Delete(servicePrice);
             }
 
+            if (image != null)
+            {
+                this.imageRepository.Delete(image);
+                this.imageRepository.SaveChanges();
+            }
+            
             this.servicePriceRepository.SaveChanges();
             this.serviceRepository.Delete(serviceId);          
             this.serviceRepository.SaveChanges();

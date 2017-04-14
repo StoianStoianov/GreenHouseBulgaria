@@ -31,5 +31,12 @@ namespace GreenHouseBulgaria.Data
         {
             return base.Set<TEntity>();
         }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Service>().HasOptional(ser => ser.Image).WithRequired(img => img.Service);
+
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }

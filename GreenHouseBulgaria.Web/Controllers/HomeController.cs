@@ -21,7 +21,8 @@ namespace GreenHouseBulgaria.Web.Controllers
         public ActionResult Index()
         {
             var services = this.serviceSevice.GetAllServices().ToList();
-            return View(services);
+            var servicesViewModels = Mapper.Map<List<Service>, List<ServiceViewModel>>(services);
+            return View(servicesViewModels);
         }
 
         public ActionResult About()
