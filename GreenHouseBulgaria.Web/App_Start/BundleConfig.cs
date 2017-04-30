@@ -23,9 +23,12 @@ namespace GreenHouseBulgaria.Web
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",                     
-                      "~/Content/modern-business.css"));
+            bundles.Add(new StyleBundle("~/Content/css").Include(                    
+                      "~/Content/bootstrap.min.css",
+                      "~/Content/animate.min.css",
+                      "~/Content/jquery.scrollbar.css",
+                      "~/Content/wiwet.template.css",
+                      "~/Content/wiwet.template.responsive.css"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
                    "~/Scripts/jquery-ui-{version}.js"));

@@ -2,240 +2,437 @@
     ViewBag.Title = "About";
 }
 
-@*<div class="container">
-    <h1>Ние сме професионалната грижа за Вашия дом или офис!</h1>
-    <div>
-        <p>
-            Ако искате Вашият дом да бъде винаги безупречно чист и уютен без това да бъде нещо, за което постоянно да се притеснявате и все не Ви остава време да свършите, то Green Home Bulgaria е идеалното решение за Вас! Ние предлагаме пълен пакет услуги, свързани с професионалната грижа за домове, офиси, жилищни входове, разходка, хранене и грижа за вашите домашни любимци. Може да бъдете сигурни, че единственото, което ще получите от нас, е коректност, високо качество, ниски цени и приветлив персонал!
-            В забързаното и натоварено ежедневие, в което живеем, ни остава все по-малко време да се погрижим за чистотата вкъщи или на работното място, а също така и да отделим нужното внимание и да се погрижим за здравето и нуждите на домашните си любимци! Ето защо създадохме Green Home Bulgaria! Нашата цел е да Ви помогнем да се справите с всичко това само с един клик или телефонно обаждане и по този начин да улесним ежедневието Ви!
-        </p>
-        <p>
-            - В края на тежкия работен ден, когато сте уморени, Ви се иска да се приберете удома и да си починете вместо да се захванете с чистенето?
-        </p>
-        <p>
-            - Всички знаем, че гледането на бебе или малко дете може да бъде безкрайно уморително. Чувствате се изтощени от всекидневните грижи за Вашето семейство и искате да си отпочинете, докато някой друг почисти вместо Вас?
-        </p>
-        <p>
-            3 причини да изберете Green Home Bulgaria:
-            <br />
-            1) Може да разчитате на нас за почистване през работния ден, късно вечерта или дори през почивните дни без това да оскъпи услугата допълнително.
-            <br />
-            2) Защото Вие заслужавате най-доброто и качествено обслужване на най-ниските цени!
-            <br />
-            3) При поръчка на абонамент получавате промоционална цена, която е по-ниска от цената за еднократно почистване. Всеки път ще бъдете посещавани от една и съща помощница, а при желание лесно можете да я замените с друга без да се чувствате неудобно от това!
-
-            Поръчайте експертното почистване, от което Вашият дом/офис се нуждае!
-            Ние оперираме на територията на гр.София, гр.Перник и гр.Бургас.
-        </p>
+<div class="page-wrap">
+    <div class="page-name titleAnimation">
+        <h1>ABOUT US</h1>
+        <p>Who We Are</p>
     </div>
-</div>*@
-<div class="container">
-    <div class="row">
-        <div class="col-lg-12">
-            <h1 class="page-header">
-                About
-                <small>It's Nice to Meet You!</small>
-            </h1>
-            <ol class="breadcrumb">
-                <li>
-                    @Html.ActionLink("Home", "Index", "Home")
-                </li>
-                <li class="active">About</li>
-            </ol>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <img src="http://placehold.it/750x450" class="img-responsive">
-        </div>
-        <div class="col-md-6">
-            <h2>Ние сме професионалната грижа за Вашия дом или офис!</h2>
-            <div>
-                <p>
-                    Ако искате Вашият дом да бъде винаги безупречно чист и уютен без това да бъде нещо, за което постоянно да се притеснявате и все не Ви остава време да свършите, то Green Home Bulgaria е идеалното решение за Вас! Ние предлагаме пълен пакет услуги, свързани с професионалната грижа за домове, офиси, жилищни входове, разходка, хранене и грижа за вашите домашни любимци. Може да бъдете сигурни, че единственото, което ще получите от нас, е коректност, високо качество, ниски цени и приветлив персонал!
-                    В забързаното и натоварено ежедневие, в което живеем, ни остава все по-малко време да се погрижим за чистотата вкъщи или на работното място, а също така и да отделим нужното внимание и да се погрижим за здравето и нуждите на домашните си любимци! Ето защо създадохме Green Home Bulgaria! Нашата цел е да Ви помогнем да се справите с всичко това само с един клик или телефонно обаждане и по този начин да улесним ежедневието Ви!
-                </p>
-                <p>
-                    - В края на тежкия работен ден, когато сте уморени, Ви се иска да се приберете удома и да си починете вместо да се захванете с чистенето?
-                </p>
-                <p>
-                    - Всички знаем, че гледането на бебе или малко дете може да бъде безкрайно уморително. Чувствате се изтощени от всекидневните грижи за Вашето семейство и искате да си отпочинете, докато някой друг почисти вместо Вас?
-                </p>
-                <p>
-                    3 причини да изберете Green Home Bulgaria:
-                    <br />
-                    1) Може да разчитате на нас за почистване през работния ден, късно вечерта или дори през почивните дни без това да оскъпи услугата допълнително.
-                    <br />
-                    2) Защото Вие заслужавате най-доброто и качествено обслужване на най-ниските цени!
-                    <br />
-                    3) При поръчка на абонамент получавате промоционална цена, която е по-ниска от цената за еднократно почистване. Всеки път ще бъдете посещавани от една и съща помощница, а при желание лесно можете да я замените с друга без да се чувствате неудобно от това!
 
-                    Поръчайте експертното почистване, от което Вашият дом/офис се нуждае!
-                    Ние оперираме на територията на гр.София, гр.Перник и гр.Бургас.
+    <div class="container">
+        <div class="row wiwet-welcome fadeUpEffect">
+            <div class="col-sm-8 col-sm-offset-2 text-center">
+                <h3>WELCOME TO</h3>
+                <h2>SKRIPT</h2>
+                <h6 class="three-dot-line">
+                    <span>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                    </span>
+                </h6>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
             </div>
         </div>
+
+        <div class="row wiwet-under-welcome fadeUpEffect1">
+            <div class="col-sm-6 col-md-3 text-center">
+                <img src="../Content/Images/setting.png">
+                <h3>
+                    <span>PERFECT SETTING</span>
+                    <i class="fa fa-circle"></i>
+                    <i class="fa fa-circle"></i>
+                    <i class="fa fa-circle"></i>
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullam.
+                </p>
+            </div>
+
+            <div class="col-sm-6 col-md-3 text-center">
+                <img src="../Content/Images/mobile-ready.png">
+                <h3>
+                    <span>MOBILE READY</span>
+                    <i class="fa fa-circle"></i>
+                    <i class="fa fa-circle"></i>
+                    <i class="fa fa-circle"></i>
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullam.
+                </p>
+            </div>
+
+            <div class="col-sm-6 col-md-3 text-center">
+                <img src="../Content/Images/support.png">
+                <h3>
+                    <span>24/7 SUPPORT</span>
+                    <i class="fa fa-circle"></i>
+                    <i class="fa fa-circle"></i>
+                    <i class="fa fa-circle"></i>
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullam.
+                </p>
+            </div>
+
+            <div class="col-sm-6 col-md-3 text-center">
+                <img src="../Content/Images/documentation.png">
+                <h3>
+                    <span>DOCUMENTATION</span>
+                    <i class="fa fa-circle"></i>
+                    <i class="fa fa-circle"></i>
+                    <i class="fa fa-circle"></i>
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullam.
+                </p>
+            </div>
+
+        </div>
+
     </div>
-    <!-- Team Member Profiles -->
-    <div class="row">
-        <div class="col-lg-12">
-            <h2 class="page-header">Our Team</h2>
+
+    <div class="row wiwet-more-aboutus fadeLeftRight">
+        <div class="col-sm-6 fadeLeftEffect">
+            <div>
+                <h3>MORE</h3>
+                <h2>
+                    <span>ABOUT US</span>
+                    <i class="fa fa-circle"></i>
+                    <i class="fa fa-circle"></i>
+                    <i class="fa fa-circle"></i>
+                </h2>
+                <p>
+                    Ако искате Вашият дом да бъде винаги безупречно чист и уютен без това да бъде нещо, за което постоянно да се притеснявате и все не Ви остава време да свършите, то Green Home Bulgaria е идеалното решение за Вас! Ние предлагаме пълен пакет услуги, свързани с професионалната грижа за домове, офиси, жилищни входове, разходка, хранене и грижа за вашите домашни любимци. Може да бъдете сигурни, че единственото, което ще получите от нас, е коректност, високо качество, ниски цени и приветлив персонал!
+                    В забързаното и натоварено ежедневие, в което живеем, ни остава все по-малко време да се погрижим за чистотата вкъщи или на работното място, а също така и да отделим нужното внимание и да се погрижим за здравето и нуждите на  домашните си любимци! Ето защо създадохме Green Home Bulgaria! Нашата цел е да Ви помогнем да се справите с всичко това само с един клик или телефонно обаждане и по този начин да улесним ежедневието Ви!
+                    В края на тежкия работен ден, когато сте уморени, Ви се иска да се приберете удома и да си починете вместо да се захванете с чистенето?
+                    Всички знаем, че гледането на бебе или малко дете може да бъде безкрайно уморително. Чувствате се изтощени от всекидневните грижи за Вашето семейство и искате да си отпочинете, докато някой друг почисти вместо Вас?
+                    <br/>
+                    3 причини да изберете Green Home Bulgaria:<br/>
+                    1) Може да разчитате на нас за почистване през работния ден, късно вечерта или дори през почивните дни без това да оскъпи услугата допълнително.<br />
+                    2) Защото Вие заслужавате най-доброто и качествено обслужване на най-ниските цени!<br />
+                    3) При поръчка на абонамент получавате промоционална цена, която е по-ниска от цената за еднократно почистване. Всеки път ще бъдете посещавани от една и съща помощница, а при желание лесно можете да я замените с друга без да се чувствате неудобно от това!<br />
+
+                    Поръчайте експертното почистване, от което Вашият дом/офис се нуждае!
+                    Ние оперираме на територията на гр.София, гр.Перник и гр.Бургас.
+                    Обадете ни се сега!
+
+                </p>
+            </div>
         </div>
-        <div class="col-sm-4">
-            <img src="http://placehold.it/750x450" class="img-responsive">
-            <h3>
-                John Smith
-                <small>Job Title</small>
-            </h3>
-            <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
-            <ul class="list-unstyled list-inline list-social-icons">
-                <li class="tooltip-social facebook-link">
-                    <a title="Facebook" data-placement="top" data-toggle="tooltip" href="#facebook-profile"><i class="fa fa-facebook-square fa-2x"></i></a>
-                </li>
-                <li class="tooltip-social linkedin-link">
-                    <a title="LinkedIn" data-placement="top" data-toggle="tooltip" href="#linkedin-profile"><i class="fa fa-linkedin-square fa-2x"></i></a>
-                </li>
-                <li class="tooltip-social twitter-link">
-                    <a title="Twitter" data-placement="top" data-toggle="tooltip" href="#twitter-profile"><i class="fa fa-twitter-square fa-2x"></i></a>
-                </li>
-                <li class="tooltip-social google-plus-link">
-                    <a title="Google+" data-placement="top" data-toggle="tooltip" href="#google-plus-profile"><i class="fa fa-google-plus-square fa-2x"></i></a>
-                </li>
-            </ul>
-        </div>
-        <div class="col-sm-4">
-            <img src="http://placehold.it/750x450" class="img-responsive">
-            <h3>
-                John Smith
-                <small>Job Title</small>
-            </h3>
-            <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
-            <ul class="list-unstyled list-inline list-social-icons">
-                <li class="tooltip-social facebook-link">
-                    <a title="Facebook" data-placement="top" data-toggle="tooltip" href="#facebook-profile"><i class="fa fa-facebook-square fa-2x"></i></a>
-                </li>
-                <li class="tooltip-social linkedin-link">
-                    <a title="LinkedIn" data-placement="top" data-toggle="tooltip" href="#linkedin-profile"><i class="fa fa-linkedin-square fa-2x"></i></a>
-                </li>
-                <li class="tooltip-social twitter-link">
-                    <a title="Twitter" data-placement="top" data-toggle="tooltip" href="#twitter-profile"><i class="fa fa-twitter-square fa-2x"></i></a>
-                </li>
-                <li class="tooltip-social google-plus-link">
-                    <a title="Google+" data-placement="top" data-toggle="tooltip" href="#google-plus-profile"><i class="fa fa-google-plus-square fa-2x"></i></a>
-                </li>
-            </ul>
-        </div>
-        <div class="col-sm-4">
-            <img src="http://placehold.it/750x450" class="img-responsive">
-            <h3>
-                John Smith
-                <small>Job Title</small>
-            </h3>
-            <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
-            <ul class="list-unstyled list-inline list-social-icons">
-                <li class="tooltip-social facebook-link">
-                    <a title="Facebook" data-placement="top" data-toggle="tooltip" href="#facebook-profile"><i class="fa fa-facebook-square fa-2x"></i></a>
-                </li>
-                <li class="tooltip-social linkedin-link">
-                    <a title="LinkedIn" data-placement="top" data-toggle="tooltip" href="#linkedin-profile"><i class="fa fa-linkedin-square fa-2x"></i></a>
-                </li>
-                <li class="tooltip-social twitter-link">
-                    <a title="Twitter" data-placement="top" data-toggle="tooltip" href="#twitter-profile"><i class="fa fa-twitter-square fa-2x"></i></a>
-                </li>
-                <li class="tooltip-social google-plus-link">
-                    <a title="Google+" data-placement="top" data-toggle="tooltip" href="#google-plus-profile"><i class="fa fa-google-plus-square fa-2x"></i></a>
-                </li>
-            </ul>
-        </div>
-        <div class="col-sm-4">
-            <img src="http://placehold.it/750x450" class="img-responsive">
-            <h3>
-                John Smith
-                <small>Job Title</small>
-            </h3>
-            <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
-            <ul class="list-unstyled list-inline list-social-icons">
-                <li class="tooltip-social facebook-link">
-                    <a title="Facebook" data-placement="top" data-toggle="tooltip" href="#facebook-profile"><i class="fa fa-facebook-square fa-2x"></i></a>
-                </li>
-                <li class="tooltip-social linkedin-link">
-                    <a title="LinkedIn" data-placement="top" data-toggle="tooltip" href="#linkedin-profile"><i class="fa fa-linkedin-square fa-2x"></i></a>
-                </li>
-                <li class="tooltip-social twitter-link">
-                    <a title="Twitter" data-placement="top" data-toggle="tooltip" href="#twitter-profile"><i class="fa fa-twitter-square fa-2x"></i></a>
-                </li>
-                <li class="tooltip-social google-plus-link">
-                    <a title="Google+" data-placement="top" data-toggle="tooltip" href="#google-plus-profile"><i class="fa fa-google-plus-square fa-2x"></i></a>
-                </li>
-            </ul>
-        </div>
-        <div class="col-sm-4">
-            <img src="http://placehold.it/750x450" class="img-responsive">
-            <h3>
-                John Smith
-                <small>Job Title</small>
-            </h3>
-            <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
-            <ul class="list-unstyled list-inline list-social-icons">
-                <li class="tooltip-social facebook-link">
-                    <a title="Facebook" data-placement="top" data-toggle="tooltip" href="#facebook-profile"><i class="fa fa-facebook-square fa-2x"></i></a>
-                </li>
-                <li class="tooltip-social linkedin-link">
-                    <a title="LinkedIn" data-placement="top" data-toggle="tooltip" href="#linkedin-profile"><i class="fa fa-linkedin-square fa-2x"></i></a>
-                </li>
-                <li class="tooltip-social twitter-link">
-                    <a title="Twitter" data-placement="top" data-toggle="tooltip" href="#twitter-profile"><i class="fa fa-twitter-square fa-2x"></i></a>
-                </li>
-                <li class="tooltip-social google-plus-link">
-                    <a title="Google+" data-placement="top" data-toggle="tooltip" href="#google-plus-profile"><i class="fa fa-google-plus-square fa-2x"></i></a>
-                </li>
-            </ul>
-        </div>
-        <div class="col-sm-4">
-            <img src="http://placehold.it/750x450" class="img-responsive">
-            <h3>
-                John Smith
-                <small>Job Title</small>
-            </h3>
-            <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
-            <ul class="list-unstyled list-inline list-social-icons">
-                <li class="tooltip-social facebook-link">
-                    <a title="Facebook" data-placement="top" data-toggle="tooltip" href="#facebook-profile"><i class="fa fa-facebook-square fa-2x"></i></a>
-                </li>
-                <li class="tooltip-social linkedin-link">
-                    <a title="LinkedIn" data-placement="top" data-toggle="tooltip" href="#linkedin-profile"><i class="fa fa-linkedin-square fa-2x"></i></a>
-                </li>
-                <li class="tooltip-social twitter-link">
-                    <a title="Twitter" data-placement="top" data-toggle="tooltip" href="#twitter-profile"><i class="fa fa-twitter-square fa-2x"></i></a>
-                </li>
-                <li class="tooltip-social google-plus-link">
-                    <a title="Google+" data-placement="top" data-toggle="tooltip" href="#google-plus-profile"><i class="fa fa-google-plus-square fa-2x"></i></a>
-                </li>
-            </ul>
+        <div class="col-sm-6 fadeRightEffect">
+            <img src="../Content/Images/irish-hands.jpg">
         </div>
     </div>
-    <!-- Our Customers -->
-    <div class="row">
-        <div class="col-lg-12">
-            <h2 class="page-header">Our Customers</h2>
+
+    <div class="container fadeUpEffect2">
+        <div class="row wiwet-welcome">
+            <div class="col-sm-8 col-sm-offset-2 text-center">
+                <h3>DO YOU</h3>
+                <h2>LOVE IT</h2>
+                <h6 class="three-dot-line">
+                    <span>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                    </span>
+                </h6>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna al iqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis  aute irure
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+            </div>
         </div>
-        <div class="col-md-2 col-sm-4 col-xs-6">
-            <img src="http://placehold.it/500x300" class="img-responsive img-customer">
-        </div>
-        <div class="col-md-2 col-sm-4 col-xs-6">
-            <img src="http://placehold.it/500x300" class="img-responsive img-customer">
-        </div>
-        <div class="col-md-2 col-sm-4 col-xs-6">
-            <img src="http://placehold.it/500x300" class="img-responsive img-customer">
-        </div>
-        <div class="col-md-2 col-sm-4 col-xs-6">
-            <img src="http://placehold.it/500x300" class="img-responsive img-customer">
-        </div>
-        <div class="col-md-2 col-sm-4 col-xs-6">
-            <img src="http://placehold.it/500x300" class="img-responsive img-customer">
-        </div>
-        <div class="col-md-2 col-sm-4 col-xs-6">
-            <img src="http://placehold.it/500x300" class="img-responsive img-customer">
+
+        <div class="row about-accordion">
+            <div class="col-sm-6 col-md-7">
+                <img src="../Content/Images/devices.jpg">
+            </div>
+            <div class="col-sm-6 col-md-5">
+
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default panel-custom">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <h4 class="panel-title">
+                                    TITLE OF LOREM IPSUM
+                                </h4>
+                            </a>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-custom">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <h4 class="panel-title">
+                                    TITLE OF LOREM IPSUM
+                                </h4>
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-custom">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <h4 class="panel-title">
+                                    TITLE OF LOREM IPSUM
+                                </h4>
+                            </a>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
+
+    <div class="row wiwet-inside-skript fadeRightEffect1">
+        <div class="container fadeLeftRight1">
+            <div class="row animateBars">
+                <div class="col-sm-8 col-sm-offset-2 wiwet-welcome">
+                    <div class="text-center">
+                        <h3>INSIDE</h3>
+                        <h2>SKRIPT TEMPLATE</h2>
+                        <h6 class="three-dot-line">
+                            <div class="left-line pull-left"></div>
+                            <div class="right-line pull-right"></div>
+                            <div class="clearfix"></div>
+                            <span>
+                                <i class="fa fa-circle"></i>
+                                <i class="fa fa-circle"></i>
+                                <i class="fa fa-circle"></i>
+                            </span>
+                        </h6>
+                    </div>
+
+                    <h4>HTML5</h4>
+
+                    <div class="progress wiwet-progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">
+                            <span>98%</span>
+                        </div>
+                    </div>
+
+                    <h4>CCS 3</h4>
+                    <div class="progress wiwet-progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100">
+                            <span>99%</span>
+                        </div>
+                    </div>
+
+                    <h4>ASP.NET</h4>
+                    <div class="progress wiwet-progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                            <span>100%</span>
+                        </div>
+                    </div>
+
+                    <h4>JQUERY</h4>
+                    <div class="progress wiwet-progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100">
+                            <span>96%</span>
+                        </div>
+                    </div>
+
+                    <h4>USER INTERFACE</h4>
+                    <div class="progress wiwet-progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                            <span>100%</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container  wiwet-welcome wiwet-meet-our-team fadeUpEffect3">
+        <div class="col-sm-8 col-sm-offset-2 text-center">
+            <h3>MEET</h3>
+            <h2>OUR TEAM</h2>
+            <h6 class="three-dot-line">
+                <span>
+                    <i class="fa fa-circle"></i>
+                    <i class="fa fa-circle"></i>
+                    <i class="fa fa-circle"></i>
+                </span>
+            </h6>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
+            </p>
+        </div>
+
+        <div class="row wiwet-team-skript">
+            <div class="col-sm-6 col-md-3">
+                <div class="team-desc">
+                    <img src="../Content/Images/john.jpg">
+                    <h4>JOHN DOE</h4>
+                    <span>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                    </span>
+                    <h3>DEVELOPER</h3>
+                    <div class="team-desc-hover">
+                        <img src="../Content/Images/john.jpg">
+                        <span>
+                            <i class="fa fa-circle"></i>
+                            <i class="fa fa-circle"></i>
+                            <i class="fa fa-circle"></i>
+                        </span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolo .</p>
+                        <span>
+                            <i class="fa fa-circle"></i>
+                            <i class="fa fa-circle"></i>
+                            <i class="fa fa-circle"></i>
+                        </span>
+                        <h5>JOHN DOE - DEVELOPER</h5>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-6 col-md-3">
+                <div class="team-desc">
+                    <img src="../Content/Images/jane.jpg">
+                    <h4>JANE DOE</h4>
+                    <span>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                    </span>
+                    <h3>MARKETING</h3>
+                    <div class="team-desc-hover">
+                        <img src="../Content/Images/jane.jpg">
+                        <span>
+                            <i class="fa fa-circle"></i>
+                            <i class="fa fa-circle"></i>
+                            <i class="fa fa-circle"></i>
+                        </span>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolo .
+                        </p>
+                        <span>
+                            <i class="fa fa-circle"></i>
+                            <i class="fa fa-circle"></i>
+                            <i class="fa fa-circle"></i>
+                        </span>
+                        <h5>JANE DOE - MARKETING</h5>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-6 col-md-3">
+                <div class="team-desc">
+                    <img src="../Content/Images/mark.jpg">
+                    <h4>MARK DOE</h4>
+                    <span>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                    </span>
+                    <h3>DATA ANALYST</h3>
+                    <div class="team-desc-hover">
+                        <img src="../Content/Images/mark.jpg">
+                        <span>
+                            <i class="fa fa-circle"></i>
+                            <i class="fa fa-circle"></i>
+                            <i class="fa fa-circle"></i>
+                        </span>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolo .
+                        </p>
+                        <span>
+                            <i class="fa fa-circle"></i>
+                            <i class="fa fa-circle"></i>
+                            <i class="fa fa-circle"></i>
+                        </span>
+                        <h5>MARK DOE - DATA ANALYST</h5>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-6 col-md-3">
+                <div class="team-desc">
+                    <img src="../Content/Images/lily.jpg">
+                    <h4>LILY DOE</h4>
+                    <span>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                    </span>
+                    <h3>DESIGNER</h3>
+                    <div class="team-desc-hover">
+                        <img src="../Content/Images/lily.jpg">
+                        <span>
+                            <i class="fa fa-circle"></i>
+                            <i class="fa fa-circle"></i>
+                            <i class="fa fa-circle"></i>
+                        </span>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolo .
+                        </p>
+                        <span>
+                            <i class="fa fa-circle"></i>
+                            <i class="fa fa-circle"></i>
+                            <i class="fa fa-circle"></i>
+                        </span>
+                        <h5>LILY DOE - DESIGNER</h5>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
 </div>
