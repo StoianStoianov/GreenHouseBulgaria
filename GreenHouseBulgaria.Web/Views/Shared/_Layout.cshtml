@@ -13,6 +13,35 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+        .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0;
+            font-size: 20px;
+            background-color: azure;
+        }
+
+        .carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+     
+        /*.navbar-brand,
+        .navbar-nav > li > a {
+            line-height: 150px;
+            height: 120px;
+            padding-top: 10px;
+            font-size: 30px;
+        }
+
+        .navbar .navbar-header,
+.navbar-collapse {
+    float:none;
+    display:inline-block;
+    vertical-align: top;
+}*/
+        
+    </style>
 </head>
 <body>
 
@@ -26,7 +55,8 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
-                @Html.ActionLink("My Bootstrap Site", "Index", new { controller = "Home" }, new { @class = "navbar-brand" })
+                @*@Html.ActionLink("My Bootstrap Site", "Index", new { controller = "Home" }, new { @class = "navbar-brand" })*@
+                <a href="#" class="navbar-brand"><img src="/Content/images/logo__final_greenhome.png" width="30"></a> 
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
