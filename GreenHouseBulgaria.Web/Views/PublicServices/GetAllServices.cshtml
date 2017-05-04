@@ -32,145 +32,147 @@
 }
 
 <style>
-        .columns {
-            float: left;
-            width: 33.3%;
-            padding: 8px;
+    .columns {
+        float: left;
+        width: 33.3%;
+        padding: 8px;
+    }
+
+    /* Style the list */
+    .price {
+        list-style-type: none;
+        border: 1px solid #eee;
+        margin: 0;
+        padding: 0;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+    }
+
+        /* Add shadows on hover */
+        .price:hover {
+            box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
         }
 
-        /* Style the list */
-        .price {
-            list-style-type: none;
-            border: 1px solid #eee;
-            margin: 0;
-            padding: 0;
-            -webkit-transition: 0.3s;
-            transition: 0.3s;
-        }
-
-            /* Add shadows on hover */
-            .price:hover {
-                box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
-            }
-
-            /* Pricing header */
-            .price .header {
-                background-color: #111;
-                color: white;
-                font-size: 20px;
-            }
-
-            .price .header-green {
-                background-color: #10f551;
-                color: white;
-                font-size: 20px;
-            }
-
-            .price .header-blue {
-                background-color: #4397f5;
-                color: white;
-                font-size: 20px;
-            }
-
-
-            .price .header-red {
-                background-color: #f71f4c;
-                color: white;
-                font-size: 20px;
-            }
-
-            .price .header-grey {
-                background-color: #5b5355;
-                color: white;
-                font-size: 20px;
-            }
-
-            /* List items */
-            .price li {
-                border-bottom: 1px solid #eee;
-                padding: 20px;
-                text-align: center;
-            }
-
-            /* Grey list item */
-            .price .grey {
-                background-color: #eee;
-                font-size: 20px;
-            }
-
-        /* The "Sign Up" button */
-        .button {
-            background-color: #4CAF50;
-            border: none;
+        /* Pricing header */
+        .price .header {
+            background-color: #111;
             color: white;
-            padding: 10px 25px;
+            font-size: 20px;
+        }
+
+        .price .header-green {
+            background-color: #10f551;
+            color: white;
+            font-size: 20px;
+        }
+
+        .price .header-blue {
+            background-color: #4397f5;
+            color: white;
+            font-size: 20px;
+        }
+
+
+        .price .header-red {
+            background-color: #f71f4c;
+            color: white;
+            font-size: 20px;
+        }
+
+        .price .header-grey {
+            background-color: #5b5355;
+            color: white;
+            font-size: 20px;
+        }
+
+        /* List items */
+        .price li {
+            border-bottom: 1px solid #eee;
+            padding: 20px;
             text-align: center;
-            text-decoration: none;
-            font-size: 18px;
         }
 
-        .price {
-            font-size: 2em;
+        /* Grey list item */
+        .price .grey {
+            background-color: #eee;
+            font-size: 20px;
         }
 
-        /* Change the width of the three columns to 100%
+    /* The "Sign Up" button */
+    .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 10px 25px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .price {
+        font-size: 2em;
+    }
+
+    /* Change the width of the three columns to 100%
     (to stack horizontally on small screens) */
-        @@media only screen and (max-width: 600px) {
-            .columns {
-                width: 100%;
-            }
+    @@media only screen and (max-width: 600px) {
+        .columns {
+            width: 100%;
+        }
+    }
 </style>
-<div class="container">
-    <div class="row">
-        <div class="col-lg-12">
-            <h1 class="page-header">
-                Services
-                <small>What We Do</small>
-            </h1>
-            <ol class="breadcrumb">
-                <li>
-                    @Html.ActionLink("Home", "Index", "Home")
-                </li>
-                <li class="active">Services</li>
-            </ol>
-        </div>
+
+<div class="page-wrap">
+    <div class="page-name titleAnimation">
+        <h1>PORTFOLIO</h1>
+        <p>We Show You</p>
     </div>
-    <!-- /.row -->
-    <div class="row">
-        <div class="col-lg-12">
-            <img src="http://placehold.it/1200x300" class="img-responsive">
+
+    <div class="container">
+        <div class="row wiwet-welcome fadeUpEffect">
+            <div class="col-sm-8 col-sm-offset-2 text-center wiwet-skript-contact">
+                <h3>DISCOVER</h3>
+                <h2>WHAT WE CREATE</h2>
+                <h6 class="three-dot-line">
+                    <span>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                    </span>
+                </h6>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
         </div>
-    </div>
-    <!-- /.row -->
-    <!-- Service Paragraphs -->
-    <div class="row">
-        <div class="col-md-8">
-            <h2 class="page-header">Our Premium Services</h2>
-            <p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-        </div>
-        <div class="col-md-4">
-            <h2 class="page-header">Something More</h2>
-            <p>Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets.</p>
-            <a href="#" class="btn btn-primary">Click Me!</a>
-        </div>
-    </div>
-    <!-- /.row -->
-    <!-- Service Tabs -->
-    <div class="row">
-        <div class="col-lg-12">
-            <h2 class="page-header">Tabbed Services</h2>
-            <ul class="nav nav-tabs" id="myTab">
-                <li class="active">
-                    <a data-toggle="tab" href="#service-1">@Model[0].Title</a>
+
+        <div class="wiwet-skript-tabs fadeUpEffect1">
+
+            <ul class="nav" role="tablist">
+                <li role="presentation" class="active">
+                    <a href="#service1" aria-controls="@Model[0].Title" role="tab" data-toggle="tab">@Model[0].Title</a>
+                    <span>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                    </span>
                 </li>
                 @for (int i = 1; i < Model.Count; i++)
                 {
-                    <li>
-                        <a data-toggle="tab" href="#service-@(i+1)">@Model[i].Title</a>
+                    <li role="presentation">
+                        <a href="#service@(i+1)" aria-controls="@Model[i].Title" role="tab" data-toggle="tab">@Model[i].Title</a>
+                        <span>
+                            <i class="fa fa-circle"></i>
+                            <i class="fa fa-circle"></i>
+                            <i class="fa fa-circle"></i>
+                        </span>
                     </li>
                 }
             </ul>
-            <div class="tab-content" id="myTabContent">
+
+            <div class="tab-content">
                 @for (int i = 0; i < Model.Count; i++)
                 {
                     string classValue = string.Empty;
@@ -179,9 +181,9 @@
                     {
                         classValue = "in active";
                     }
-                    <div id="service-@(i + 1)" class="tab-pane fade @classValue">
-                        <i class="fa fa-gear pull-left fa-4x"></i>
-                        <p>@Model[i].Title</p>
+
+
+                    <div id="service@(i+1)" class="tab-pane fade @classValue" role="tabpanel">
                         <div class="row">
                             @foreach (var price in Model[i].ServicePriceViewModels)
                             {
@@ -211,73 +213,24 @@
                                     </ul>
                                 </div>
 
-                               
-                                 colorHelperCounter++;
-                                
-                                    }
 
-                        </div>
-
-                           @{
-                                colorHelperCounter = 0;
-                                colorStyle = "green";
+                                colorHelperCounter++;
 
                             }
                         </div>
-                        }
-
-                        @*<div id="service-one" class="tab-pane fade in active">
-                                <i class="fa fa-gear pull-left fa-4x"></i>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam placerat nunc ut tellus tristique, non posuere neque iaculis. Fusce aliquet dui ut felis rhoncus, vitae molestie mauris auctor. Donec pellentesque feugiat leo a adipiscing. Pellentesque quis tristique eros, sed rutrum mauris.</p>
-                                <p>Nam fringilla quis enim in eleifend. Suspendisse sed lectus mauris. Nam commodo, arcu et posuere placerat, tellus tortor dignissim eros, sit amet eleifend urna lorem sit amet nulla. Praesent sem nibh, vulputate nec congue eu, dapibus vitae augue. Suspendisse cursus urna sit amet metus porttitor, in pharetra quam feugiat. Etiam tempus euismod nulla eget pellentesque.</p>
-                            </div>
-                            <div id="service-two" class="tab-pane fade">
-                                <i class="fa fa-gears pull-left fa-4x"></i>
-                                <p>Nam fringilla quis enim in eleifend. Suspendisse sed lectus mauris. Nam commodo, arcu et posuere placerat, tellus tortor dignissim eros, sit amet eleifend urna lorem sit amet nulla. Praesent sem nibh, vulputate nec congue eu, dapibus vitae augue. Suspendisse cursus urna sit amet metus porttitor, in pharetra quam feugiat. Etiam tempus euismod nulla eget pellentesque.</p>
-                                <p>Vestibulum laoreet molestie urna ac vehicula. Phasellus laoreet semper ipsum ac gravida. Sed in varius tortor. Nullam blandit in neque quis aliquet. Fusce volutpat pellentesque sem non convallis. Suspendisse sit amet magna pulvinar, gravida mauris eu, tincidunt massa. Nam lectus mi, viverra non quam nec, mollis malesuada dolor. Vivamus hendrerit nunc interdum turpis egestas, a lobortis odio consequat. Fusce posuere purus quis ligula faucibus lacinia. Curabitur sit amet congue dolor. Duis dapibus hendrerit nunc et gravida. Phasellus mollis, lectus quis ornare aliquam, arcu orci posuere lectus, vehicula bibendum sem ante quis lacus.</p>
-                            </div>
-                            <div id="service-three" class="tab-pane fade">
-                                <i class="fa fa-magic pull-left fa-4x"></i>
-                                <p>Vestibulum laoreet molestie urna ac vehicula. Phasellus laoreet semper ipsum ac gravida. Sed in varius tortor. Nullam blandit in neque quis aliquet. Fusce volutpat pellentesque sem non convallis. Suspendisse sit amet magna pulvinar, gravida mauris eu, tincidunt massa. Nam lectus mi, viverra non quam nec, mollis malesuada dolor. Vivamus hendrerit nunc interdum turpis egestas, a lobortis odio consequat. Fusce posuere purus quis ligula faucibus lacinia. Curabitur sit amet congue dolor. Duis dapibus hendrerit nunc et gravida. Phasellus mollis, lectus quis ornare aliquam, arcu orci posuere lectus, vehicula bibendum sem ante quis lacus.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam placerat nunc ut tellus tristique, non posuere neque iaculis. Fusce aliquet dui ut felis rhoncus, vitae molestie mauris auctor. Donec pellentesque feugiat leo a adipiscing. Pellentesque quis tristique eros, sed rutrum mauris.</p>
-                            </div>
-                            <div id="service-four" class="tab-pane fade">
-                                <i class="fa fa-flask pull-left fa-4x"></i>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam placerat nunc ut tellus tristique, non posuere neque iaculis. Fusce aliquet dui ut felis rhoncus, vitae molestie mauris auctor. Donec pellentesque feugiat leo a adipiscing. Pellentesque quis tristique eros, sed rutrum mauris.</p>
-                                <p>Nam fringilla quis enim in eleifend. Suspendisse sed lectus mauris. Nam commodo, arcu et posuere placerat, tellus tortor dignissim eros, sit amet eleifend urna lorem sit amet nulla. Praesent sem nibh, vulputate nec congue eu, dapibus vitae augue. Suspendisse cursus urna sit amet metus porttitor, in pharetra quam feugiat. Etiam tempus euismod nulla eget pellentesque.</p>
-                            </div>
-                            <div id="service-five" class="tab-pane fade">
-                                <i class="fa fa-flag pull-left fa-4x"></i>
-                                <p>Nam fringilla quis enim in eleifend. Suspendisse sed lectus mauris. Nam commodo, arcu et posuere placerat, tellus tortor dignissim eros, sit amet eleifend urna lorem sit amet nulla. Praesent sem nibh, vulputate nec congue eu, dapibus vitae augue. Suspendisse cursus urna sit amet metus porttitor, in pharetra quam feugiat. Etiam tempus euismod nulla eget pellentesque.</p>
-                                <p>Vestibulum laoreet molestie urna ac vehicula. Phasellus laoreet semper ipsum ac gravida. Sed in varius tortor. Nullam blandit in neque quis aliquet. Fusce volutpat pellentesque sem non convallis. Suspendisse sit amet magna pulvinar, gravida mauris eu, tincidunt massa. Nam lectus mi, viverra non quam nec, mollis malesuada dolor. Vivamus hendrerit nunc interdum turpis egestas, a lobortis odio consequat. Fusce posuere purus quis ligula faucibus lacinia. Curabitur sit amet congue dolor. Duis dapibus hendrerit nunc et gravida. Phasellus mollis, lectus quis ornare aliquam, arcu orci posuere lectus, vehicula bibendum sem ante quis lacus.</p>
-                            </div>*@
                     </div>
-                </div>
+
+                      
+                            colorHelperCounter = 0;
+                            colorStyle = "green";
+
+                        
+
+                            }
+
+
             </div>
-    <!-- /.row -->
-    <!-- Service Images -->
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <h2 class="page-header">Service Images</h2>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <img src="http://placehold.it/750x450" class="img-responsive">
-                                        <h3>Service One</h3>
-                                        <p>Service one description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst.</p>
-                                        <a class="btn btn-link btn-sm pull-right">More <i class="fa fa-angle-right"></i></a>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <img src="http://placehold.it/750x450" class="img-responsive">
-                                        <h3>Service Two</h3>
-                                        <p>Service two description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst.</p>
-                                        <a class="btn btn-link btn-sm pull-right">More <i class="fa fa-angle-right"></i></a>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <img src="http://placehold.it/750x450" class="img-responsive">
-                                        <h3>Service Three</h3>
-                                        <p>Service three description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst.</p>
-                                        <a class="btn btn-link btn-sm pull-right">More <i class="fa fa-angle-right"></i></a>
-                                    </div>
-                                </div>
-    <!-- /.row -->
-                            </div>
+        </div>
+    </div>
+
+</div>

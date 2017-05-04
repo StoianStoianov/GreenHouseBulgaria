@@ -33,6 +33,8 @@ namespace GreenHouseBulgaria.Web
             bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
                    "~/Scripts/jquery-ui-{version}.js"));
             
+
+
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                "~/Content/themes/base/core.css",
                "~/Content/themes/base/resizable.css",
@@ -46,6 +48,13 @@ namespace GreenHouseBulgaria.Web
                "~/Content/themes/base/datepicker.css",
                "~/Content/themes/base/progressbar.css",
                "~/Content/themes/base/theme.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/wiwet").Include(
+                "~/Scripts/jquery.scrollbar.min.js",
+                 "~/Scripts/jquery.countTo.js",
+                 "~/Scripts/jquery.waypoints.min.js",
+                 "~/Scripts/wiwet.template.js"
+                ));           
         }
     }
 }
