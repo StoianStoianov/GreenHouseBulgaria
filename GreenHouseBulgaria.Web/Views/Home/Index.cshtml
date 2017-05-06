@@ -307,65 +307,38 @@
         </div>
 
         <div class="row wiwet-under-welcome why-choose-skript">
+            @for (int i = 0; i < servicesRows; i++)
+            {
+                <div class="row stylish-panel">
+                    @for (int j = i * 3; j < i * 3 + 3; j++)
+                {
+                    if (j == Model.Count)
+                    {
+                        break;
+                    }
+                    <a href="@Url.Action("GetService","PublicServices", new {serviceId = Model[j].Id})">
+                        <div class="col-md-4">
+                            <div>
+                                @if (Model[j].Image != null)
+                                {
+                                    string imageBase64 = Convert.ToBase64String(Model[j].Image.ImageBytes);
+                                    string imageSrc = string.Format("data:image/gif;base64,{0}", imageBase64);
+                                    <img src="@imageSrc" alt="Texto Alternativo" class="img-circle img-thumbnail">
+                                }
+                                else
+                                {
+                                    <img src="http://lorempixel.com/200/200/abstract/1/" alt="Texto Alternativo" class="img-circle img-thumbnail">
+                                }
 
-            <div class="col-sm-4 text-center">
-                <img src="Content/Images/responsive.png">
-                <h3>
-                    <span>RESPONSIVE READY</span>
-                    <i class="fa fa-circle"></i>
-                    <i class="fa fa-circle"></i>
-                    <i class="fa fa-circle"></i>
-                </h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliq
-                    ua. Ut enim ad minim veniam, quis nostru
-                    d exercitation ullamco laboris nisi ut aliqu
-                    ip ex ea commodo consequat. Duis aute ir
-                    ure dolor in reprehenderit in voluptate velit
-                </p>
-            </div>
+                                <h2>@Model[j].Title</h2>
+                            </div>
+                        </div>
+                    </a>
+                    }
 
-            <div class="col-sm-4 text-center">
-                <img src="Content/Images/interface.png">
-                <h3>
-                    <span>BEST INTERFACE</span>
-                    <i class="fa fa-circle"></i>
-                    <i class="fa fa-circle"></i>
-                    <i class="fa fa-circle"></i>
-                </h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliq
-                    ua. Ut enim ad minim veniam, quis nostru
-                    d exercitation ullamco laboris nisi ut aliqu
-                    ip ex ea commodo consequat. Duis aute ir
-                    ure dolor in reprehenderit in voluptate velit
-                </p>
-            </div>
-
-            <div class="col-sm-4 text-center">
-                <img src="Content/Images/edit.png">
-                <h3>
-                    <span>EASY EDITING</span>
-                    <i class="fa fa-circle"></i>
-                    <i class="fa fa-circle"></i>
-                    <i class="fa fa-circle"></i>
-                </h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliq
-                    ua. Ut enim ad minim veniam, quis nostru
-                    d exercitation ullamco laboris nisi ut aliqu
-                    ip ex ea commodo consequat. Duis aute ir
-                    ure dolor in reprehenderit in voluptate velit
-                </p>
-            </div>
-
-
+                </div>
+            }
+           
         </div>
 
     </div>
