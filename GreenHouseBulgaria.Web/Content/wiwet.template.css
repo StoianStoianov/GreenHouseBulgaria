@@ -65,14 +65,14 @@ textarea:focus{
 }
 .navbar-nav>li a:hover{
 	background: transparent;
-	color: #17cca1;
+	color: #0b9444;
 }
-.navbar-nav>li.active a{
-	color: #17cca1;
+.navbar-nav>li.active>a{
+	color: #0b9444;
 }
-.navbar-nav>li:last-child a{
+/*.navbar-nav>li:last-child a{
 	font-size: 1.6em;
-}
+}*/
 @media (min-width: 768px){
 	.navbar-nav>li {
     	margin-top: 36px;
@@ -90,7 +90,7 @@ textarea:focus{
 	margin: 0px;
 }
 .join-skript h3 span{
-	color: #17cca1;
+	color: #0b9444;
 	font-weight: 700;
 }
 
@@ -99,7 +99,7 @@ textarea:focus{
 	color: #FFF;
 	font-weight: 700;
 	font-size: 18px;
-	background: #17cca1;
+	background: #0b9444;
 	text-align: center;
 	line-height: 57px;
 	margin-top: 26px;
@@ -183,7 +183,7 @@ footer .copyright .row div:last-child a{
 /*about page*/
 .page-name{
 	color: #FFF;
-	background: #17cca1;
+	background: #0b9444;
 	text-align: center;
 	padding: 65px 0px;
 }
@@ -208,7 +208,7 @@ footer .copyright .row div:last-child a{
 	margin: 0px;
 }
 .wiwet-welcome h2{
-	color: #17cca1;
+	color: #0b9444;
 	font-size: 30px;
 	font-weight: 700;
 	margin: 0px;
@@ -222,10 +222,10 @@ footer .copyright .row div:last-child a{
 	margin-bottom: 55px;
 }
 h6.three-dot-line{
-	border-top: 2px solid #17cca1;
+	border-top: 2px solid #0b9444;
 	width: 350px;
 	margin: 0 auto 40px;
-	color: #17cca1;
+	color: #0b9444;
 }
 h6.three-dot-line span{
 	display: block;
@@ -240,7 +240,7 @@ h6.three-dot-line span i{
 	margin-bottom: 75px;
 }
 .wiwet-under-welcome h3{
-	color: #17cca1;
+	color: #0b9444;
 	font-size: 18px;
 	font-weight: 700;
 	margin: 0px;
@@ -263,7 +263,7 @@ h6.three-dot-line span i{
 .wiwet-more-aboutus{
 	margin-left: 0px;
 	margin-right: 0px;
-	background: #17cca1;
+	background: #0b9444;
 	color: #FFF;
 }
 .wiwet-more-aboutus > div{
@@ -305,7 +305,7 @@ h6.three-dot-line span i{
 	background: #FFF;
 }
 .panel-custom>.panel-heading h4{
-	color: #17cca1;
+	color: #0b9444;
 	font-weight: 700;
 	font-size: 18px;
 	height: 52px;
@@ -349,7 +349,7 @@ h6.three-dot-line span i{
 	color: #FFF;
 }
 .wiwet-inside-skript h4{
-	color: #17cca1;
+	color: #0b9444;
 	font-weight: 700;
 	font-size: 14px;
 	margin-top: 35px;
@@ -362,13 +362,13 @@ h6.three-dot-line span i{
 .wiwet-inside-skript h6 .left-line,
 .wiwet-inside-skript h6 .right-line{
 	width: 140px;
-	border-top: 2px solid #17cca1;
+	border-top: 2px solid #0b9444;
 }
 .wiwet-inside-skript h6 span{
 	background: transparent;
 }
 .wiwet-progress{
-	background: #17cca1;
+	background: #0b9444;
 	border-radius: 20px;
 	height: 28px;
 	overflow: visible;
@@ -377,7 +377,7 @@ h6.three-dot-line span i{
 	background: #03a47e;
 	text-align: right;
 	border-radius: 20px;
-	color: #17cca1;
+	color: #0b9444;
 	font-weight: 700;
 	font-size: 14px;
 }
@@ -412,10 +412,10 @@ h6.three-dot-line span i{
 	padding-bottom: 25px;
 }
 .wiwet-team-skript .team-desc span{
-	color: #17cca1;
+	color: #0b9444;
 }
 .wiwet-team-skript .team-desc-hover{
-	background: #17cca1;
+	background: #0b9444;
 	text-align: center;
 	color: #FFF;
 	padding: 20px 15px;
@@ -457,7 +457,7 @@ h6.three-dot-line span i{
 }
 .wiwet-team-skript .team-desc-hover a i{
 	font-size: 0.9em;
-	color: #17cca1;
+	color: #0b9444;
 	background: #FFF;
 	width: 20px;
 	height: 20px;
@@ -469,7 +469,7 @@ h6.three-dot-line span i{
 
 /*contact page*/
 .wiwet-skript-contact form input[type=text]{
-	color: #17cca1;
+	color: #0b9444;
 	font-size: 14px;
 	display: block;
 	width: 100%;
@@ -477,17 +477,17 @@ h6.three-dot-line span i{
 	line-height: 57px;
 	margin-bottom: 43px;
 	padding: 0px 30px;
-	border: 2px solid #17cca1;
+	border: 2px solid #0b9444;
 	border-radius: 30px;
 }
 .wiwet-skript-contact form textarea{
-	color: #17cca1;
+	color: #0b9444;
 	font-size: 14px;
 	display: block;
 	width: 100%;
 	margin-bottom: 43px;
 	padding: 30px;
-	border: 2px solid #17cca1;
+	border: 2px solid #0b9444;
 	border-radius: 30px;
 	min-height: 135px;
 }
@@ -496,26 +496,26 @@ h6.three-dot-line span i{
 	outline: none;
 }
 ::-webkit-input-placeholder { /* Safari, Chrome and Opera */
-  color: #17cca1;
+  color: #0b9444;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-  color: #17cca1;
+  color: #0b9444;
 }
 
 ::-moz-placeholder { /* Firefox 19+ */
-  color: #17cca1;
+  color: #0b9444;
 }
 
 :-ms-input-placeholder { /* IE 10+ */
-  color: #17cca1;
+  color: #0b9444;
 }
 
 ::-ms-input-placeholder { /* Edge */
-  color: #17cca1;
+  color: #0b9444;
 }
 .wiwet-skript-contact form input[type=submit]{
-	background: #17cca1;
+	background: #0b9444;
 	color: #FFF;
 	font-size: 18px;
 	font-weight: 700;
@@ -530,7 +530,7 @@ h6.three-dot-line span i{
 }
 .wiwet-skript-our-location{
 	color: #FFF;
-	background: #17cca1;
+	background: #0b9444;
 	margin: 0px;
 }
 .wiwet-skript-our-location > div{
@@ -572,7 +572,7 @@ h6.three-dot-line span i{
 	line-height: 27px;
 	text-align: center;
 	background: #FFF;
-	color: #17cca1;
+	color: #0b9444;
 	border-radius: 50%;
 	margin-right: 12px;
 	margin-top: 35px;
@@ -605,7 +605,7 @@ h6.three-dot-line span i{
 	font-weight: 700;
 }
 .wiwet-skript-blog-feed article h6{
-	color: #17cca1;
+	color: #0b9444;
 	margin: 15px 0px;
 }
 .wiwet-skript-blog-feed article .row p{
@@ -622,11 +622,11 @@ h6.three-dot-line span i{
 }
 .wiwet-skript-blog-feed article a{
 	font-size: 14px;
-	color: #17cca1;
+	color: #0b9444;
 	font-weight: 700;
 }
 .wiwet-skript-blog-feed nav .pagination>li>a{
-	background: #17cca1;
+	background: #0b9444;
 	margin: 0px 12px;
 	border: none;
 	color: #FFF;
@@ -652,7 +652,7 @@ h6.three-dot-line span i{
 }
 
 .wiwet-skript-blog-sidebar .sidebar-search{
-	border: 2px solid #17cca1;
+	border: 2px solid #0b9444;
 	line-height: 52px;
 	border-radius: 30px;
 }
@@ -663,12 +663,12 @@ h6.three-dot-line span i{
 	display: block;
 	padding-left: 30px;
 	border: none;
-	color: #17cca1;
+	color: #0b9444;
 	background: transparent;
 	font-size: 14px;
 }
 .wiwet-skript-blog-sidebar .sidebar-search button{
-	color: #17cca1;
+	color: #0b9444;
 	border: none;
 	display: block;
 	width: 50px;
@@ -683,13 +683,13 @@ h6.three-dot-line span i{
 	font-size: 1.4em;
 }
 .wiwet-skript-blog-sidebar h4{
-	color: #17cca1;
+	color: #0b9444;
 	font-size: 18px;
 	font-weight: 700;
 	margin-top: 30px;
 }
 .wiwet-skript-blog-sidebar h6{
-	color: #17cca1;
+	color: #0b9444;
 }
 .wiwet-skript-blog-sidebar p{
 	color: #121212;
@@ -739,14 +739,14 @@ h6.three-dot-line span i{
 .wiwet-skript-tabs .nav>li>a:hover,
 .wiwet-skript-tabs .nav>li.active span,
 .wiwet-skript-tabs .nav>li:hover span{
-	color: #17cca1;
+	color: #0b9444;
 }
 .wiwet-skript-tabs .nav>li.active>a, 
 .wiwet-skript-tabs .nav>li.active>a:focus,
 .wiwet-skript-tabs .nav>li.active>a:hover{
 	border: none;
 	background: transparent;
-	color: #17cca1;
+	color: #0b9444;
 	margin: 0px;
 }
 .wiwet-skript-tabs .nav>li:hover>a, 
@@ -873,7 +873,7 @@ h6.three-dot-line span i{
 
 /*services page*/
 .wiwet-skript-services-row h4{
-	color: #17cca1;
+	color: #0b9444;
 	font-size: 18px;
 	font-weight: 700;
 	margin: 0px;
@@ -953,7 +953,7 @@ h6.three-dot-line span i{
 	margin-top: 40px;
 }
 .wiwet-skript-best-services{
-	background: #17cca1;
+	background: #0b9444;
 	margin: 100px 0px 50px;
 }
 .wiwet-skript-best-services > div{
@@ -996,18 +996,18 @@ h6.three-dot-line span i{
 	padding-bottom: 120px;
 }
 .subscribe-services input[type=text] {
-    color: #17cca1;
+    color: #0b9444;
     font-size: 18px;
     display: block;
     width: 100%;
     height: 72px;
     line-height: 72px;
     padding: 0px 30px;
-    border: 2px solid #17cca1;
+    border: 2px solid #0b9444;
     border-radius: 40px;
 }
 .subscribe-services input[type=submit] {
-    background: #17cca1;
+    background: #0b9444;
     color: #FFF;
     font-size: 18px;
     font-weight: 700;
@@ -1031,7 +1031,7 @@ h6.three-dot-line span i{
 	text-shadow: none;
 }
 #carousel-home .carousel-caption h1{
-	color: #17cca1;
+	color: #89171a;
 	font-size: 72px;
 	font-weight: 700;
 }
@@ -1048,7 +1048,7 @@ h6.three-dot-line span i{
 	margin-bottom: 40px;
 }
 #carousel-home .carousel-caption a{
-	background: #17cca1;
+	background: #89171a;
 	color: #FFF;
 	font-size: 18px;
 	font-weight: 700;
@@ -1075,7 +1075,7 @@ h6.three-dot-line span i{
 }
 .who-we-are{
 	margin: 0px; 
-	background: #17cca1;
+	background: #0b9444;
 }
 .who-we-are > div{
 	padding: 0px;
@@ -1104,7 +1104,7 @@ h6.three-dot-line span i{
     text-align: center;
 }
 .who-we-are > div > div h6.three-dot-line span{
-	background: #17cca1;
+	background: #0b9444;
 }
 .who-we-are > div > div p{
 	font-size: 14px;
@@ -1117,7 +1117,7 @@ h6.three-dot-line span i{
 	height: 70px;
 	line-height: 70px;
 	background: #FFF;
-	color: #17cca1;
+	color: #0b9444;
 	margin-top: 30px;
 }
 .our-offer{
@@ -1125,12 +1125,12 @@ h6.three-dot-line span i{
 	margin-bottom: 100px;
 }
 .our-offer h4{
-	color: #17cca1;
+	color: #0b9444;
 	font-size: 24px;
 	font-weight: 700;
 }
 .our-offer h6{
-	color: #17cca1;
+	color: #0b9444;
 	margin-bottom: 20px;
 }
 .our-offer p{
@@ -1150,7 +1150,7 @@ h6.three-dot-line span i{
 }
 .our-clients-speak h6 .left-line, .our-clients-speak h6 .right-line {
     width: 140px;
-    border-top: 2px solid #17cca1;
+    border-top: 2px solid #0b9444;
 }
 .our-clients-speak h6 span {
     background: transparent;
@@ -1184,7 +1184,7 @@ h6.three-dot-line span i{
 }
 .our-clients-speak .client-name h6{
 	margin-top: 10px;
-	color: #17cca1;
+	color: #0b9444;
 }
 .our-clients-speak .client-name h6 i{
 	margin-right: 4px;
@@ -1197,7 +1197,7 @@ h6.three-dot-line span i{
 	padding-bottom: 120px;
 }
 .our-achievements h3{
-	color: #17cca1;
+	color: #0b9444;
 	font-weight: bold;
 	font-size: 48px;
 	margin-top: 30px;
@@ -1230,7 +1230,7 @@ input[placeholder=Search] {
 	margin-bottom: 50px;
 }
 input.default-input {
-    color: #17cca1;
+    color: #0b9444;
     font-size: 14px;
     display: block;
     width: 100%;
@@ -1238,12 +1238,12 @@ input.default-input {
     line-height: 57px;
     margin-bottom: 43px;
     padding: 0px 30px;
-    border: 2px solid #17cca1;
+    border: 2px solid #0b9444;
     border-radius: 30px;
 }
 
 input.primary-input{
-    color: #17cca1;
+    color: #0b9444;
     font-size: 14px;
     display: block;
     width: 100%;
@@ -1303,7 +1303,7 @@ select::-ms-expand {
 }
 
 .styled-select.wiwet-select select {
-   color: #17cca1;
+   color: #0b9444;
     font-size: 14px;
     display: block;
     width: 100%;
@@ -1311,25 +1311,25 @@ select::-ms-expand {
     line-height: 57px;
     margin-bottom: 43px;
     padding: 0px 30px;
-    border: 2px solid #17cca1;
+    border: 2px solid #0b9444;
     border-radius: 30px;
 }
 
 textarea.default-textarea,.scroll-textarea {
-    color: #17cca1;
+    color: #0b9444;
     font-size: 14px;
     display: block;
     width: 100%;
     margin-bottom: 43px;
     padding: 30px;
-    border: 2px solid #17cca1;
+    border: 2px solid #0b9444;
     border-radius: 30px;
     min-height: 260px;
     resize: none;
 }
 /*scrolling textarea start*/
 .scrollbar-outer > .scroll-element .scroll-element_track {
-    background-color: #17cca1;
+    background-color: #0b9444;
 }
 .scrollbar-outer > .scroll-element .scroll-bar:hover,
 .scrollbar-outer > .scroll-element .scroll-bar{
@@ -1352,7 +1352,7 @@ textarea.default-textarea,.scroll-textarea {
 }
 .custom-radio label,
 .custom-check label{
-	color: #17cca1;
+	color: #0b9444;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 30px;
@@ -1364,7 +1364,7 @@ textarea.default-textarea,.scroll-textarea {
 	display: inline-block;
 	width: 30px;
 	height: 30px;
-	border: 2px solid #17cca1;
+	border: 2px solid #0b9444;
 	margin-right: 20px;
 	-ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -1388,7 +1388,7 @@ textarea.default-textarea,.scroll-textarea {
 }
 
 .wiwet-default-button{
-    background: #17cca1;
+    background: #0b9444;
     color: #FFF;
     font-size: 18px;
     font-weight: 700;
@@ -1436,7 +1436,7 @@ h3.default-heading{
 }
 .layouts h4{
 	font-size: 18px;
-	color: #17cca1;
+	color: #0b9444;
 	text-align: center;
 	margin-bottom: 20px;
 }
@@ -1444,7 +1444,7 @@ h3.default-heading{
 	color: #767676;
 }
 .default-layout{
-	background: #17cca1;
+	background: #0b9444;
 	color: #FFF;
 	padding: 35px 20px;
 }
@@ -1471,7 +1471,7 @@ h3.default-heading{
 	padding: 0px 0px 35px;
 }
 .complex-layout h3{
-	background: #17cca1;
+	background: #0b9444;
 	color: #FFF;
 	font-size: 18px;
 	line-height: 60px;
@@ -1485,7 +1485,7 @@ h3.default-heading{
 	padding: 0px 20px;
 }
 .diamond-shape{
-	background: #17cca1;
+	background: #0b9444;
 	height: 280px;
 	-ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -1527,7 +1527,7 @@ h3.default-heading{
 }
 .image-style h4{
 	text-align: center;
-	color: #17cca1;
+	color: #0b9444;
 	font-size: 18px;
 	font-weight: 700;
 }
@@ -1584,10 +1584,10 @@ h3.default-heading{
 	font-weight: 700;
 }
 .skript-colors .green-color .diamond-color-shape{
-	background: #17cca1;
+	background: #0b9444;
 }
 .skript-colors .green-color p{
-	color: #17cca1;
+	color: #0b9444;
 }
 .skript-colors .dark-color .diamond-color-shape{
 	background: #121212;

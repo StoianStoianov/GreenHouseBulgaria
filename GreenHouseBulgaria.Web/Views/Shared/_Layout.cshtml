@@ -15,7 +15,12 @@
         .dropdown:hover .dropdown-menu {
             display: block;
             margin-top: 0;
-            
+                      
+        }
+
+         .dropdown:hover .dropdown-menu a {
+             font-size: 25px;
+                      
         }
     </style>
 
@@ -53,9 +58,15 @@
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <!--menu:start-->
-               @Html.Action("ServicesNavigation", "Home")
+                @Html.Action("ServicesNavigation", "Home")
                 <!--menu:end-->
+                @*<div class="telephoneTab">
+                    <div class="telephoneText"> обади се сега</div>
+                    <div class="telephoneNumber">088888888</div>               
+                </div>*@
+               
             </div>
+            
         </div>
     </nav>
 
@@ -65,10 +76,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-9">
-                        <h3>JOIN THE <span>SKRIPT</span><br class="visible-xs"> SATISFIED <span>COMMUNITY</span></h3>
+                        @*<h3>JOIN THE <span>SKRIPT</span><br class="visible-xs"> SATISFIED <span>COMMUNITY</span></h3>*@
+                        <h3>ПРОФЕСИОНАЛНА <span>ГРИЖА ЗА</span><br class="visible-xs"> ВАШИЯ <span>ДОМ ИЛИ ОФИС</span></h3>
                     </div>
                     <div class="col-sm-3">
-                        <a href="http://wiwet.com/ItemDetail/TestWiwitIntegration/21">PURCHASE IT</a>
+                        @Html.ActionLink("Поръчай", "GetAllServices", "PublicServices")
                     </div>
                 </div>
             </div>

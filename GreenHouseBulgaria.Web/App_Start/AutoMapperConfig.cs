@@ -25,6 +25,8 @@ namespace GreenHouseBulgaria.Web.App_Start
 
                 cfg.CreateMap<Image, ImageViewModel>().ReverseMap();
 
+                cfg.CreateMap<ContactMessage, ContactMessageViewModel>().ReverseMap();
+
 
 
 

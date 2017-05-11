@@ -28,7 +28,8 @@ namespace GreenHouseBulgaria.Web
                       "~/Content/animate.min.css",
                       "~/Content/jquery.scrollbar.css",
                       "~/Content/wiwet.template.css",
-                      "~/Content/wiwet.template.responsive.css"));
+                      "~/Content/wiwet.template.responsive.css",
+                      "~/Content/site.css"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
                    "~/Scripts/jquery-ui-{version}.js"));

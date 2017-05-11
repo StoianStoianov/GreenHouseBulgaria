@@ -1,24 +1,33 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿.wiwet-navigation > li > a {
+    font-size: 30px;
+    color: #89171a;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+.wiwet-navigation > a {
+    font-size: 30px;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+.telephoneTab {
+    height: 70px;
+    color: #89171a;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+.telephoneText {
+    height: 30px;
+    margin: -55px;
+    margin-left: 1px;
+    font-size: 20px;
+    display: block;
+    
+}
+
+.telephoneNumber {
+    height: 30px;
+    margin-top: 47px;
+    font-size: 30px;
+    display: block;
+}
+
+.carousel-inner h1 {
+    color: #89171a;
 }

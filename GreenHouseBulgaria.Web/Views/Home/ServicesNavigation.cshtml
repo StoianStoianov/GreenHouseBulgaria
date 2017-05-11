@@ -3,7 +3,10 @@
     ViewBag.Title = "ServicesNavigation";
 }
 
-<ul class="nav navbar-nav navbar-right wiwet-navigation">  
+<ul class="nav navbar-nav wiwet-navigation">  
+    <a href="javascript:void(0)" class="custom-toggle collapsed visible-xs" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+        <i class="fa fa-times"></i>
+    </a>
     <li>
         @Html.ActionLink("Начало", "Index", "Home")
     </li>
@@ -11,7 +14,7 @@
         @Html.ActionLink("За нас", "About", "Home")
     </li>
     <li>
-        @Html.ActionLink("Контакти", "Contact", "Home")
+        @Html.ActionLink("Контакти", "Contact", "ContactMessage")
     </li>
     <li class="dropdown">
         
@@ -24,5 +27,10 @@
             }
 
         </ul>
+    </li>  
+    <li class="telephoneTab">
+        <span class="telephoneText"> обади се сега</span>
+        <span class="telephoneNumber">088888888</span>
     </li>
 </ul>
+

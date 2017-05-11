@@ -8,245 +8,28 @@
     var servicesRows = Model.Count / 3 + 1;
 }
 
-@*<div id="myCarousel" class="carousel slide">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-        <div class="item active">
-            <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
-            <div class="carousel-caption">
-                <h1>Modern Business - A Bootstrap 3 Template</h1>
-            </div>
-        </div>
-        <div class="item">
-            <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
-            <div class="carousel-caption">
-                <h1>Ready to Style &amp; Add Content</h1>
-            </div>
-        </div>
-        <div class="item">
-            <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
-            <div class="carousel-caption">
-                <h1>
-                    Additional Layout Options at <a href="http://startbootstrap.com">http://startbootstrap.com</a>
-                </h1>
-            </div>
-        </div>
-    </div>
-
-    <!-- Controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="icon-prev"></span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="icon-next"></span>
-    </a>
-</div>
-
-<div class="section">
-
-    <div class="container">
-
-        <div class="row">
-            <div class="col-lg-4 col-md-4">
-                <h3><i class="fa fa-check-circle"></i> Bootstrap 3 Built</h3>
-                <p>The 'Modern Business' website template by <a href="http://startbootstrap.com">Start Bootstrap</a> is built with <a href="http://getbootstrap.com">Bootstrap 3</a>. Make sure you're up to date with latest Bootstrap documentation!</p>
-            </div>
-            <div class="col-lg-4 col-md-4">
-                <h3><i class="fa fa-pencil"></i> Ready to Style &amp; Edit</h3>
-                <p>You're ready to go with this pre-built page structure, now all you need to do is add your own custom stylings! You can see some free themes over at <a href="http://bootswatch.com">Bootswatch</a>, or come up with your own using <a href="http://getbootstrap.com/customize/">the Bootstrap customizer</a>!</p>
-            </div>
-            <div class="col-lg-4 col-md-4">
-                <h3><i class="fa fa-folder-open"></i> Many Page Options</h3>
-                <p>This template features many common pages that you might see on a business website. Pages include: about, contact, portfolio variations, blog, pricing, FAQ, 404, services, and general multi-purpose pages.</p>
-            </div>
-        </div>
-        <!-- /.row -->
-
-    </div>
-    <!-- /.container -->
-
-</div>
-<!-- /.section -->
-
-<div class="section-colored text-center">
-
-    <div class="container">
-
-        <div class="row">
-            <div class="col-lg-12">
-                <h2>Modern Business: A Clean &amp; Simple Full Website Template by Start Bootstrap</h2>
-                <p>A complete website design featuring various single page templates from Start Bootstraps library of free HTML starter templates.</p>
-                <hr>
-            </div>
-        </div>
-        <!-- /.row -->
-
-    </div>
-    <!-- /.container -->
-
-</div>
-<!-- /.section-colored -->
-
-<div class="section">
-
-    <div class="container">
-
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>Display Some Work on the Home Page Portfolio</h2>
-                <hr>
-            </div>
-            @for (int i = 0; i < servicesRows; i++)
-            {
-                <div class="row stylish-panel">
-                    @for (int j = i * 3; j < i * 3 + 3; j++)
-                    {
-                        if (j == Model.Count)
-                        {
-                            break;
-                        }
-                        <a href="@Url.Action("GetService","PublicServices", new {serviceId = Model[j].Id})">
-                            <div class="col-md-4">
-                                <div>
-                                    @if (Model[j].Image != null)
-                                    {
-                                        string imageBase64 = Convert.ToBase64String(Model[j].Image.ImageBytes);
-                                        string imageSrc = string.Format("data:image/gif;base64,{0}", imageBase64);
-                                        <img src="@imageSrc" alt="Texto Alternativo" class="img-circle img-thumbnail">
-                                    }
-                                    else
-                                    {
-                                        <img src="http://lorempixel.com/200/200/abstract/1/" alt="Texto Alternativo" class="img-circle img-thumbnail">
-                                    }
-
-                                    <h2>@Model[j].Title</h2>                                 
-                                </div>
-                            </div>
-                        </a>
-                    }
-
-                </div>
-            }          
-        </div>
-        <!-- /.row -->
-
-    </div>
-    <!-- /.container -->
-
-</div>
-<!-- /.section -->
-
-<div class="section-colored">
-
-    <div class="container">
-
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6">
-                <h2>Modern Business Features Include:</h2>
-                <ul>
-                    <li>Bootstrap 3 Framework</li>
-                    <li>Mobile Responsive Design</li>
-                    <li>Predefined File Paths</li>
-                    <li>Working PHP Contact Page</li>
-                    <li>Minimal Custom CSS Styles</li>
-                    <li>Unstyled: Add Your Own Style and Content!</li>
-                    <li>Font-Awesome fonts come pre-installed!</li>
-                    <li>100% <strong>Free</strong> to Use</li>
-                    <li>Open Source: Use for any project, private or commercial!</li>
-                </ul>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6">
-                <img class="img-responsive" src="http://placehold.it/700x450/ffffff/cccccc">
-            </div>
-        </div>
-        <!-- /.row -->
-
-    </div>
-    <!-- /.container -->
-
-</div>
-<!-- /.section-colored -->
-
-<div class="section">
-
-    <div class="container">
-
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6">
-                <img class="img-responsive" src="http://placehold.it/700x450">
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6">
-                <h2>Modern Business Features Include:</h2>
-                <ul>
-                    <li>Bootstrap 3 Framework</li>
-                    <li>Mobile Responsive Design</li>
-                    <li>Predefined File Paths</li>
-                    <li>Working PHP Contact Page</li>
-                    <li>Minimal Custom CSS Styles</li>
-                    <li>Unstyled: Add Your Own Style and Content!</li>
-                    <li>Font-Awesome fonts come pre-installed!</li>
-                    <li>100% <strong>Free</strong> to Use</li>
-                    <li>Open Source: Use for any project, private or commercial!</li>
-                </ul>
-            </div>
-        </div>
-        <!-- /.row -->
-
-    </div>
-    <!-- /.container -->
-
-</div>
-<!-- /.section -->
-
-<div class="container">
-
-    <div class="row well">
-        <div class="col-lg-8 col-md-8">
-            <h4>'Modern Business' is a ready-to-use, Bootstrap 3 updated, multi-purpose HTML theme!</h4>
-            <p>For more templates and more page options that you can integrate into this website template, visit Start Bootstrap!</p>
-        </div>
-        <div class="col-lg-4 col-md-4">
-            <a class="btn btn-lg btn-primary pull-right" href="http://startbootstrap.com">See More Templates!</a>
-        </div>
-    </div>
-    <!-- /.row -->
-
-</div>
-<!-- /.container -->*@
-
-@{
-    ViewBag.Title = "Home Page";
-}
 
 <div class="page-wrap">
     <div id="carousel-home" class="carousel slide animated fadeIn" data-ride="carousel">
 
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img src="Content/Images/slide1.jpg">
+                <img src="Content/Images/slider1.jpg">
                 <div class="carousel-caption">
                     <h1>
-                        WHY SKRIPT
+                        Професионална грижа за вашия дом или офис
                         <span>
                             <i class="fa fa-circle"></i>
                             <i class="fa fa-circle"></i>
                             <i class="fa fa-circle"></i>
                         </span>
-                    </h1>
-                    <h3>Build your dream corporate portal</h3>
+                    </h1>                   
                     <a href="#">EXPLORE IT</a>
                 </div>
             </div>
 
-            <div class="item">
-                <img src="Content/Images/slide2.jpg">
+            @*<div class="item">
+                <img src="Content/Images/slider2.jpg"width="1500" height="844">
                 <div class="carousel-caption">
                     <h1>
                         THE PERFECT
@@ -262,7 +45,7 @@
             </div>
 
             <div class="item">
-                <img src="Content/Images/slide3.jpg">
+                <img src="Content/Images/slider3.jpg">
                 <div class="carousel-caption">
                     <h1>
                         AN EASY
@@ -275,23 +58,23 @@
                     <h3>Interface To Manipulate</h3>
                     <a href="#">EXPLORE IT</a>
                 </div>
-            </div>
+            </div>*@
 
 
         </div>
 
-        <a class="left carousel-control" href="#carousel-home" role="button" data-slide="prev">
+        @*<a class="left carousel-control" href="#carousel-home" role="button" data-slide="prev">
             <img src="Content/Images/carousel-left.png">
         </a>
 
         <a class="right carousel-control" href="#carousel-home" role="button" data-slide="next">
             <img src="Content/Images/carousel-right.png">
-        </a>
+        </a>*@
     </div>
 
 
     <div class="container fadeUpEffect">
-        <div class="row wiwet-welcome">
+        @*<div class="row wiwet-welcome">
             <div class="col-sm-8 col-sm-offset-2 text-center wiwet-skript-contact">
                 <h3>WHY CHOOSING</h3>
                 <h2>SKRIPT?</h2>
@@ -304,7 +87,7 @@
                 </h6>
 
             </div>
-        </div>
+        </div>*@
 
         <div class="row wiwet-under-welcome why-choose-skript">
             @for (int i = 0; i < servicesRows; i++)
@@ -323,7 +106,7 @@
                                 {
                                     string imageBase64 = Convert.ToBase64String(Model[j].Image.ImageBytes);
                                     string imageSrc = string.Format("data:image/gif;base64,{0}", imageBase64);
-                                    <img src="@imageSrc" alt="Texto Alternativo" class="img-circle img-thumbnail">
+                                    <img src="@imageSrc" alt="Texto Alternativo" class="img-circle img-thumbnail" width="300" height="250">
                                 }
                                 else
                                 {
@@ -347,8 +130,8 @@
     <section class="row who-we-are fadeLeftRight">
         <div class="col-sm-6 fadeLeftEffect">
             <div>
-                <h3>WHO WE ARE?</h3>
-                <h2>MORE ABOUT WIWET</h2>
+                <h3>Защо да изберете нас?</h3>
+                <h2>3 причини да изберете Green Home Bulgaria:</h2>
                 <h6 class="three-dot-line">
                     <span>
                         <i class="fa fa-circle"></i>
@@ -357,25 +140,21 @@
                     </span>
                 </h6>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an
-                    im id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                    veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam volu
-                    ptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                    dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dol
-                    orem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
-                    modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                    1) Може да разчитате на нас за почистване през работния ден, късно вечерта или дори през почивните дни без това да оскъпи услугата допълнително.<br/>
+                    2) Защото Вие заслужавате най-доброто и качествено обслужване на най-ниските цени!<br/>
+                    3) При поръчка на абонамент получавате промоционална цена, която е по-ниска от цената за еднократно почистване. Всеки път ще бъдете посещавани от една и съща помощница, а при желание лесно можете да я замените с друга без да се чувствате неудобно от това!<br/>
+
+                    Поръчайте експертното почистване, от което Вашият дом/офис се нуждае!
+
+                    Ние оперираме на територията на гр.София, гр.Перник и гр.Бургас.
+
                 </p>
                 <a href="#">FIND MORE</a>
             </div>
         </div>
 
         <div class="col-sm-6 fadeRightEffect">
-            <img src="Content/Images/more-about-wiwet.jpg">
+            <img src="Content/Images/whyus.jpg">
         </div>
     </section>
 
@@ -384,7 +163,7 @@
     <div class="container">
         <div class="row wiwet-welcome fadeUpEffect1">
             <div class="col-sm-8 col-sm-offset-2 text-center wiwet-skript-contact">
-                <h3>OUR OFFER</h3>
+                @*<h3>OUR OFFER</h3>
                 <h2>WITH SKRIPT</h2>
                 <h6 class="three-dot-line">
                     <span>
@@ -392,7 +171,7 @@
                         <i class="fa fa-circle"></i>
                         <i class="fa fa-circle"></i>
                     </span>
-                </h6>
+                </h6>*@
 
             </div>
         </div>
@@ -425,7 +204,7 @@
         </div>
     </div>
 
-    <section class="our-clients-speak fadeUpEffect2">
+    @*<section class="our-clients-speak fadeUpEffect2">
         <div class="container">
             <div class="row wiwet-welcome">
                 <div class="col-sm-8 col-sm-offset-2 text-center">
@@ -480,9 +259,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>*@
 
-    <div class="container fadeUpEffect3 countNumbers">
+    @*<div class="container fadeUpEffect3 countNumbers">
         <div class="row wiwet-welcome">
             <div class="col-sm-8 col-sm-offset-2 text-center wiwet-skript-contact">
                 <h3>YES WE DID</h3>
@@ -529,7 +308,7 @@
 
         </div>
 
-    </div>
+    </div>*@
 
 
 </div>

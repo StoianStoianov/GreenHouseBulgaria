@@ -228,6 +228,7 @@
     <Compile Include="Areas\Admin\Controllers\SubscriptionsController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BaseClientController.cs" />
+    <Compile Include="Controllers\ContactMessageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PublicServicesController.cs" />
@@ -236,6 +237,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\AccountViewModels.cs" />
+    <Compile Include="ViewModels\ContactMessageViewModel.cs" />
     <Compile Include="ViewModels\ImageViewModel.cs" />
     <Compile Include="ViewModels\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -251,6 +253,8 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\images\office.jpg" />
+    <Content Include="Content\images\homes.jpg" />
     <Content Include="Content\images\about-laptop.jpg" />
     <Content Include="Content\images\blog1.jpg" />
     <Content Include="Content\images\blog2.jpg" />
@@ -302,6 +306,9 @@
     <Content Include="Content\images\slide1.jpg" />
     <Content Include="Content\images\slide2.jpg" />
     <Content Include="Content\images\slide3.jpg" />
+    <Content Include="Content\images\slider1.jpg" />
+    <Content Include="Content\images\slider2.jpg" />
+    <Content Include="Content\images\slider3.jpg" />
     <Content Include="Content\images\support.png" />
     <Content Include="Content\images\testimonial.jpg" />
     <Content Include="Content\images\winter.jpg" />
@@ -450,6 +457,7 @@
     <Content Include="Areas\Admin\Views\Subscriptions\ViewSubscriptions.cshtml" />
     <Content Include="Areas\Admin\Views\Subscriptions\CheckSubscription.cshtml" />
     <Content Include="Areas\Admin\Views\AdminHome\Index.cshtml" />
+    <Content Include="Content\images\whyus.jpg" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
     <Content Include="Scripts\jquery-3.1.1.min.js" />
@@ -518,6 +526,7 @@
     <Content Include="Views\Subscription\SubscribeForService.cshtml" />
     <Content Include="Views\Subscription\SuccessSubscribtion.cshtml" />
     <Content Include="Views\PublicServices\GetAllServices.cshtml" />
+    <Content Include="Views\ContactMessage\Contact.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
