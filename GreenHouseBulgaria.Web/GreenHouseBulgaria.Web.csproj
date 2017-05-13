@@ -253,6 +253,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\images\logo__final_greenhome resize.png" />
     <Content Include="Content\images\office.jpg" />
     <Content Include="Content\images\homes.jpg" />
     <Content Include="Content\images\about-laptop.jpg" />
@@ -307,9 +308,18 @@
     <Content Include="Content\images\slide2.jpg" />
     <Content Include="Content\images\slide3.jpg" />
     <Content Include="Content\images\slider1.jpg" />
+    <Content Include="Content\images\slider1edit.jpg" />
     <Content Include="Content\images\slider2.jpg" />
     <Content Include="Content\images\slider3.jpg" />
+    <Content Include="Content\images\sliderBlurryEffect.jpg" />
     <Content Include="Content\images\support.png" />
+    <Content Include="Content\images\supportKachestvoBlack.png" />
+    <Content Include="Content\images\supportKachestvoWhite.png" />
+    <Content Include="Content\images\supportPredciznostWhite.png" />
+    <Content Include="Content\images\supportProfBlack.png" />
+    <Content Include="Content\images\supportProfWhite.png" />
+    <Content Include="Content\images\supportSigurnostBlack.png" />
+    <Content Include="Content\images\supportSigurnostWhite.png" />
     <Content Include="Content\images\testimonial.jpg" />
     <Content Include="Content\images\winter.jpg" />
     <Content Include="Content\images\working.jpg" />

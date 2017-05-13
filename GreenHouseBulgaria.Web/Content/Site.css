@@ -31,3 +31,8 @@
 .carousel-inner h1 {
     color: #89171a;
 }
+
+.colored-number {
+    color: #0b9444;
+    font-weight: bold;
+}
