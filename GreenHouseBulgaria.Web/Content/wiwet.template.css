@@ -9,6 +9,7 @@ TestWiwitIntegration Template
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 body{
 	font-family: 'Roboto', sans-serif;
+    text-align: justify;
 }
 input,
 select,
@@ -216,10 +217,12 @@ footer .copyright .row div:last-child a{
 }
 .wiwet-welcome p{
 	color: #121212;
-	font-size: 14px;
-	font-weight: 400;
-	margin: 0px;
-	margin-bottom: 55px;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 0px;
+    margin-bottom: 55px;
+    text-align: justify;
+
 }
 h6.three-dot-line{
 	border-top: 2px solid #0b9444;
@@ -259,6 +262,7 @@ h6.three-dot-line span i{
 	font-weight: 400;
 	line-height: 25px;
 	text-align: left;
+    text-align: center;
 }
 .wiwet-more-aboutus{
 	margin-left: 0px;

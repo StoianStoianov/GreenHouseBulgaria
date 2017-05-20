@@ -132,14 +132,13 @@
         <div class="col-sm-6 fadeLeftEffect">
             <div>
                 <h3>Защо да изберете нас?</h3>
-                <h2>3 причини да изберете Green Home Bulgaria:</h2>
-                <h6 class="three-dot-line">
-                    <span>
-                        <i class="fa fa-circle"></i>
-                        <i class="fa fa-circle"></i>
-                        <i class="fa fa-circle"></i>
-                    </span>
-                </h6>
+                @*<h2>3 причини да изберете Green Home Bulgaria:</h2>*@
+                <h2>
+                    3 причини да изберете Green Home Bulgaria:<br/>
+                    <i class="fa fa-circle"></i>
+                    <i class="fa fa-circle"></i>
+                    <i class="fa fa-circle"></i>
+                </h2>
                 <p>
                     1) Може да разчитате на нас за почистване през работния ден, късно вечерта или дори през почивните дни без това да оскъпи услугата допълнително.<br/>
                     2) Защото Вие заслужавате най-доброто и качествено обслужване на най-ниските цени!<br/>
@@ -150,7 +149,7 @@
                     Ние оперираме на територията на гр.София, гр.Перник и гр.Бургас.
 
                 </p>
-                <a href="#">FIND MORE</a>
+                @Html.ActionLink("НАУЧИ ПОВЕЧЕ", "About", "Home")
             </div>
         </div>
 
