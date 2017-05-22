@@ -53,12 +53,20 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     text-align: center !important;
 }
 
-footer .row {
+.footer-content-mail {
+    float: right;  
+}
+
+.top-footer > .row {
+    padding: 15px;
+}
+
+/*footer .row {
     height: 60px;
-    /*padding-top: 21px;*/
+    padding-top: 21px;
 }
 
 footer span {
     color: #ffffff;
     margin-left: 10px;
-}
+}*/

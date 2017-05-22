@@ -82,7 +82,7 @@ textarea:focus{
 .join-skript{
 	background: #e4e4e4;
 	height: 110px;
-	margin-bottom: 70px;
+	/*margin-bottom: 70px;*/
 }
 .join-skript h3{
 	line-height: 110px;
@@ -119,9 +119,9 @@ footer p{
 	line-height: 28px;
 	color: #c6c6c6;
 }
-footer .top-footer{
+/*footer .top-footer{
 	padding-bottom: 80px;
-}
+}*/
 footer .top-footer .row > div:nth-child(1) p{
 	margin-top: 30px;
 }
