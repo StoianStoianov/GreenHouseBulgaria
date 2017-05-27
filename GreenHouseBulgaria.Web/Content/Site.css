@@ -1,4 +1,4 @@
-﻿.wiwet-navigation > li > a {
+﻿/*.wiwet-navigation > li > a {
     font-size: 30px;
     color: #89171a;
 }
@@ -26,6 +26,14 @@
     margin-top: 47px;
     font-size: 30px;
     display: block;
+}*/
+#navbar-full {
+    margin-bottom: 100px;
+    background-color: white;
+}
+
+.navbar-right {
+    margin-top: -20px;
 }
 
 .carousel-inner h1 {
@@ -70,3 +78,5 @@ footer span {
     color: #ffffff;
     margin-left: 10px;
 }*/
+
+

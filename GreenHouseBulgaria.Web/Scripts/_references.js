@@ -1,5 +1,6 @@
 ﻿/// <autosync enabled="true" />
 /// <reference path="bootstrap.js" />
+/// <reference path="ct-navbar.js" />
 /// <reference path="jquery.countto.js" />
 /// <reference path="jquery.scrollbar.min.js" />
 /// <reference path="jquery.validate.js" />

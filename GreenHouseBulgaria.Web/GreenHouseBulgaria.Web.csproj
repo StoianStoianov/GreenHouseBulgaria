@@ -252,12 +252,15 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\ct-navbar.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\images\1editBlur.jpg" />
+    <Content Include="Content\images\2.png" />
     <Content Include="Content\images\2editBlur.jpg" />
     <Content Include="Content\images\3editBlur.jpg" />
     <Content Include="Content\images\emailWhite.png" />
     <Content Include="Content\images\logo__final_greenhome resize.png" />
+    <Content Include="Content\images\logo__final_greenhomeNadpis.png" />
     <Content Include="Content\images\office.jpg" />
     <Content Include="Content\images\homes.jpg" />
     <Content Include="Content\images\about-laptop.jpg" />
@@ -290,6 +293,7 @@
     <Content Include="Content\images\mark.jpg" />
     <Content Include="Content\images\mobile-ready.png" />
     <Content Include="Content\images\more-about-wiwet.jpg" />
+    <Content Include="Content\images\phoneNumber.png" />
     <Content Include="Content\images\phoneWhtie.png" />
     <Content Include="Content\images\portfolio1.jpg" />
     <Content Include="Content\images\portfolio2.jpg" />
@@ -474,6 +478,7 @@
     <Content Include="Areas\Admin\Views\AdminHome\Index.cshtml" />
     <Content Include="Content\images\whyus.jpg" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="Scripts\ct-navbar.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
     <Content Include="Scripts\jquery-3.1.1.min.js" />
     <Content Include="Scripts\jquery-3.1.1.slim.js" />

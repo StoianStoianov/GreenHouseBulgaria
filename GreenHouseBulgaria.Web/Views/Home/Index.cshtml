@@ -103,17 +103,18 @@
                     <a href="@Url.Action("GetService","PublicServices", new {serviceId = Model[j].Id})">
                         <div class="col-md-4">
                             <div>
-                                @if (Model[j].Image != null)
-                                {
-                                    string imageBase64 = Convert.ToBase64String(Model[j].Image.ImageBytes);
-                                    string imageSrc = string.Format("data:image/gif;base64,{0}", imageBase64);
-                                    <img src="@imageSrc" alt="Texto Alternativo" class="img-circle img-thumbnail" width="300" height="250">
-                                }
-                                else
-                                {
-                                    <img src="http://lorempixel.com/200/200/abstract/1/" alt="Texto Alternativo" class="img-circle img-thumbnail">
-                                }
-
+                                <div>
+                                    @if (Model[j].Image != null)
+                                    {
+                                        string imageBase64 = Convert.ToBase64String(Model[j].Image.ImageBytes);
+                                        string imageSrc = string.Format("data:image/gif;base64,{0}", imageBase64);
+                                        <img src="@imageSrc" alt="Texto Alternativo" class="img-circle" width="300" height="250">
+                                    }
+                                    else
+                                    {
+                                        <img src="http://lorempixel.com/200/200/abstract/1/" alt="Texto Alternativo" class="img-circle img-thumbnail">
+                                    }
+                                </div>
                                 <h2>@Model[j].Title</h2>
                             </div>
                         </div>
