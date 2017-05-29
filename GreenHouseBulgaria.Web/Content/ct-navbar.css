@@ -122,19 +122,22 @@ h1 .subtitle{
     transition: all 0.4s;
     -webkit-transition: all 0.4s;
     font-size: 14px;
+    border-bottom: solid 1px #E1ECF5;
 }
 .navbar-default {
     background-color: #D9D9D9;
     
 }
+
 .navbar .navbar-brand {
     font-weight: 600;
     margin-top: 13px;
     margin-bottom: 13px;
+    margin-left: 23px!important;
     font-size: 20px;
 }
 .navbar-nav > li > a {
-    margin: 6px 3px;
+    margin-top: 14px;
     padding: 6px 7px;
     text-align: center;
     min-width: 70px;
@@ -150,9 +153,15 @@ h1 .subtitle{
     position: relative;
 }
 .navbar .navbar-nav p{
-    margin: 5px 0 0;
-    font-size: 14px;
+    margin: 25px;
+    margin-top: 15px;
+    font-size: 20px;
+    color: #8f2225;
+    text-transform: uppercase;
+        font-weight: bold;
+
 }
+
 .navbar .btn{
     margin-top: 8px;
     margin-bottom: 8px;
@@ -162,7 +171,7 @@ h1 .subtitle{
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .navbar-transparent{
-    padding-top: 15px;
+    padding-top: 0;
     background-color: rgba(0,0,0,.0);
 }
 .navbar-transparent .navbar-brand, [class*="navbar-ct"] .navbar-brand{
@@ -205,11 +214,15 @@ h1 .subtitle{
     background-color: rgba(255, 255, 255, 0);
     color: #2C93FF;
 }
-.navbar-transparent .navbar-nav > .active > a, .navbar-transparent .navbar-nav > .active > a:hover, .navbar-transparent .navbar-nav > .active > a:focus, .navbar-transparent .navbar-nav > li > a:hover, .navbar-transparent .navbar-nav > li > a:focus, [class*="navbar-ct"] .navbar-nav > .active > a, [class*="navbar-ct"] .navbar-nav > .active > a:hover, [class*="navbar-ct"] .navbar-nav > .active > a:focus, [class*="navbar-ct"] .navbar-nav > li > a:hover, [class*="navbar-ct"] .navbar-nav > li > a:focus {
+/*.navbar-transparent .navbar-nav > .active > a, .navbar-transparent .navbar-nav > .active > a:hover, .navbar-transparent .navbar-nav > .active > a:focus, .navbar-transparent .navbar-nav > li > a:hover, .navbar-transparent .navbar-nav > li > a:focus, [class*="navbar-ct"] .navbar-nav > .active > a, [class*="navbar-ct"] .navbar-nav > .active > a:hover, [class*="navbar-ct"] .navbar-nav > .active > a:focus, [class*="navbar-ct"] .navbar-nav > li > a:hover, [class*="navbar-ct"] .navbar-nav > li > a:focus {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 4px;
     color: #FFFFFF;
     opacity: 1;
+}*/
+
+.navbar li:hover p {
+    color: #0b9444;
 }
 .navbar-transparent .navbar-nav > .dropdown > a .caret, [class*="navbar-ct"] .navbar-nav > .dropdown > a .caret{
     border-bottom-color: #FFFFFF;
@@ -227,16 +240,47 @@ h1 .subtitle{
 .navbar .label{
     background-color: #FF4C40;
     position: absolute;
-    right: -10px;
+    /*right: -10px;*/
     top: 0px;
     font-size: 10px;
     font-family: "Helvetica Neue";
     text-shadow: none;
 }
-[class*="navbar-ct"] .label{
+
+.menu-last-item .label {  
+    position: absolute;  
+    left: 25px;
+    top: -6px;
+    font-size: 20px;
+    font-family: "Helvetica Neue";
+    text-shadow: none;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FFFFFF;
+    color: #0b9444;
+}
+
+.menu-last-item p {
+    margin-top: 20px!important;
+}
+
+.menu-last-item div {
+    padding-top: 25px!important;
+}
+
+.menu-last-item div p a {
+    color: #8f2225;
+    font-size: 20px;
+}
+
+.menu-last-item div p a {
+    text-decoration: none;
+}
+
+/*[class*="navbar-ct"] .label{
     background-color: #FFFFFF;
     color: #FF4C40;
-}
+}*/
 .navbar-default:not(.navbar-transparent) .btn-default:hover{
     color: #2C93FF;
     border-color: #2C93FF;
@@ -273,7 +317,7 @@ h1 .subtitle{
 /*     border-bottom: 1px solid rgba(255,255,255,.6); */
 }
 .navbar:not(.navbar-transparent).navbar-ct-blue{
-    background-color: #0b9444;
+    background-color: #FFFFFF;
     /*background-color: rgba(52, 172, 220, 0.98);*/
 }
 .navbar:not(.navbar-transparent).navbar-ct-azzure{
@@ -434,8 +478,8 @@ h1 .subtitle{
 
 @media (max-width: 768px){ 
     .navbar-transparent{
-        padding-top: 15px;
-        background-color: rgba(0, 0, 0, 0.45);
+        /*padding-top: 15px;
+        background-color: rgba(0, 0, 0, 0.45);*/
     }
     .navbar-transparent .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-transparent .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-transparent .dropdown-menu > li > a:hover, .navbar-transparent .dropdown-menu > li > a:focus, [class*="navbar-ct"] .dropdown-menu > li > a:hover, [class*="navbar-ct"] .dropdown-menu > li > a:focus{
         color: #FFFFFF;
