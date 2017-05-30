@@ -131,7 +131,7 @@ h1 .subtitle{
 
 .navbar .navbar-brand {
     font-weight: 600;
-    margin-top: 13px;
+    margin-top: 17px;
     margin-bottom: 13px;
     margin-left: 23px!important;
     font-size: 20px;
@@ -402,7 +402,11 @@ h1 .subtitle{
         display: none;   
     }
     
-    .navbar-nav > li > .dropdown-menu{
+    /*.navbar-nav > li:hover > .dropdown-menu {
+        display: block;
+    }*/
+
+    /*.navbar-nav > li > .dropdown-menu{
         display: block;
         padding: 0;
         z-index: 9000;
@@ -472,7 +476,7 @@ h1 .subtitle{
         position: absolute;
         right: 15px;
         top: -10px;
-    }
+    }*/
     
 }
 
@@ -480,6 +484,9 @@ h1 .subtitle{
     .navbar-transparent{
         /*padding-top: 15px;
         background-color: rgba(0, 0, 0, 0.45);*/
+    }
+    .navbar {
+     height: 120px;
     }
     .navbar-transparent .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-transparent .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-transparent .dropdown-menu > li > a:hover, .navbar-transparent .dropdown-menu > li > a:focus, [class*="navbar-ct"] .dropdown-menu > li > a:hover, [class*="navbar-ct"] .dropdown-menu > li > a:focus{
         color: #FFFFFF;
@@ -491,15 +498,33 @@ h1 .subtitle{
         opacity: 0.8;
     }
     .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
-        background-color: rgba(0,0,0,0);
+        /*background-color: rgba(0,0,0,0);*/
         border-color: #428BCA;
     }
+
+    .nav > li:hover a p {
+        background-color: #89171a;;
+}
+
+    .navbar-toggle {
+        background-color: #0b9444;
+    }
+
     .navbar-collapse{
         text-align: center;
+        background-color: #0b9444;
+            margin-top: 105px;
     }
     .navbar-collapse .navbar-form {
         width: 170px;
         margin: 0 auto;
+    }
+    .first-menu-item {
+        border-left: none;
+    }
+
+    .menu-last-item {
+        display: none !important;
     }
     
 }
@@ -544,3 +569,8 @@ h4{
 
 }
 
+@media (max-width: 419px) {
+    .navbar {
+     height: 165px;
+    }
+}

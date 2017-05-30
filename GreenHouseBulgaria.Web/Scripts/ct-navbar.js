@@ -24,7 +24,12 @@ $(document).ready(function(){
             });
         } 
     });
-    
+   $(".dropdown").hover(function () {
+       $(".dropdown-menu", this).slideDown('slow');
+   });
+   //$(".dropdown").mouseout(function () {
+   //    $(".dropdown-menu", this).hide();
+   //});
 });
 
 $(document).scroll(function() {
@@ -42,6 +47,7 @@ $(document).scroll(function() {
         }
     }
 });
+
 
 
 

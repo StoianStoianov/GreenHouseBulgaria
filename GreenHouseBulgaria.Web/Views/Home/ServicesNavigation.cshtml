@@ -3,36 +3,6 @@
     ViewBag.Title = "ServicesNavigation";
 }
 
-@*<ul class="nav navbar-nav wiwet-navigation">  
-    <a href="javascript:void(0)" class="custom-toggle collapsed visible-xs" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-        <i class="fa fa-times"></i>
-    </a>
-    <li>
-        @Html.ActionLink("Начало", "Index", "Home")
-    </li>
-    <li>
-        @Html.ActionLink("За нас", "About", "Home")
-    </li>
-    <li>
-        @Html.ActionLink("Контакти", "Contact", "ContactMessage")
-    </li>
-    <li class="dropdown">
-        
-        @Html.ActionLink("Услуги", "GetAllServices", "PublicServices")
-        <ul class="dropdown-menu">
-
-            @foreach (var service in @Model)
-            {
-                <li>@Html.ActionLink(@service.Title, "GetService", "PublicServices", new { serviceId = service.Id }, null) </li>
-            }
-
-        </ul>
-    </li>  
-    <li class="telephoneTab">
-        <span class="telephoneText"> обади се сега</span>
-        <span class="telephoneNumber">088888888</span>
-    </li>
-</ul>*@
 
 <ul class="nav navbar-nav navbar-right">   
     <li class="first-menu-item">
