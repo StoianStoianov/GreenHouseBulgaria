@@ -116,6 +116,14 @@ footer span {
     .menu-last-item div p  {
         padding-top: 10px;
     }
+
+    @-moz-document url-prefix() { 
+ .menu-last-item .label {
+   position: absolute;
+    left: 25px;
+    top: 19px!important;
+ }
+}
 }
 
 @media screen and (max-width: 991px) and (min-width: 768px) {
@@ -135,7 +143,15 @@ footer span {
         font-size: 16px !important;
     }
 
-    .menu-last-item div p  {
+    .menu-last-item div p {
         padding-top: 10px;
+    }
+
+    @-moz-document url-prefix() {
+        .menu-last-item .label {
+            position: absolute;
+            left: 25px;
+            top: 23px !important;
+        }
     }
 }

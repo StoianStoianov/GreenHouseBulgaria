@@ -25,11 +25,11 @@ $(document).ready(function(){
         } 
     });
    $(".dropdown").hover(function () {
-       $(".dropdown-menu", this).slideDown('slow');
+       $(".dropdown-menu", this).slideDown();
    });
-   //$(".dropdown").mouseout(function () {
-   //    $(".dropdown-menu", this).hide();
-   //});
+   $(".dropdown").mouseleave(function () {
+       $(".dropdown-menu", this).slideUp();
+   });
 });
 
 $(document).scroll(function() {

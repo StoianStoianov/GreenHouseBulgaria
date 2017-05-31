@@ -260,6 +260,14 @@ h1 .subtitle{
     color: #0b9444;
 }
 
+@-moz-document url-prefix() { 
+ .menu-last-item .label {
+   position: absolute;
+    left: 25px;
+    top: 19px;
+ }
+}
+
 .menu-last-item p {
     margin-top: 20px!important;
 }
@@ -337,9 +345,14 @@ h1 .subtitle{
     background-color: rgba(255, 76, 64, 0.98);
 }
 
+.dropdown-menu > li {
+        /*background-color: #e1ecf5;*/
+}
+
 .dropdown-menu > li > a {
     padding: 8px 20px;
-    color: #333333;
+    color: #8f2225;
+    font-size: 16px;
 }
 .dropdown-menu > li:first-child > a{
     border-radius: 10px 10px 0 0;
@@ -349,8 +362,8 @@ h1 .subtitle{
     border-radius: 0 0 10px 10px;
 }
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
-    background-color: #F5F5F5;
-    color: #333333;
+    /*background-color: #F5F5F5;*/
+    color: #0b9444;
     opacity: 1;
     text-decoration: none;
 }
