@@ -31,58 +31,65 @@
                     Не се колебайте! Възползвайте се от качеството на нашите услуги на достъпни цени в София, Перник или Бургас!
 
                 </p>
-               @using (Html.BeginForm("CreateContactMessage","ContactMessage", FormMethod.Post))
-               {
-                   @Html.AntiForgeryToken()
-                <div class="row">
-                  
-                    <div>
-                        @Html.EditorFor(model => model.FullName, new { htmlAttributes = new { @class = "form-control", placeholder = @Html.DisplayNameFor(m => m.FullName) } })
-                        @Html.ValidationMessageFor(model => model.FullName, "", new { @class = "text-danger" })
+                @using (Html.BeginForm("CreateContactMessage", "ContactMessage", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="row">
+                        <div class="form-group">
+                            <div>
+                                @Html.ValidationMessageFor(model => model.FullName, "", new { @class = "text-danger" })
+                                @Html.EditorFor(model => model.FullName, new {htmlAttributes = new {@class = "form-control", placeholder = @Html.DisplayNameFor(m => m.FullName)}})
+                                @*@Html.ValidationMessageFor(model => model.FullName, "", new { @class = "text-danger" })*@
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                   <div class="row">
-                     
-                       <div>
-                           @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", placeholder = @Html.DisplayNameFor(m => m.Email) } })
-                           @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
-                       </div>
-                   </div>
-
-                <div class="row">
-                  
-                    <div>
-                        @Html.EditorFor(model => model.Subject, new { htmlAttributes = new { @class = "form-control", placeholder = @Html.DisplayNameFor(m => m.Subject) } })
-                        @Html.ValidationMessageFor(model => model.Subject, "", new { @class = "text-danger" })
+                    <div class="row">
+                        <div class="form-group">
+                            <div>
+                                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                                @Html.TextBoxFor(model => model.Email, new {@class = "form-control", placeholder = @Html.DisplayNameFor(m => m.Email)})
+                                @*@Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })*@
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <div class="row">
-                 
-                    <div>
-                        @Html.TextAreaFor(model => model.Text, new { @class = "form-control", placeholder = @Html.DisplayNameFor(m => m.Text) })
-                        @Html.ValidationMessageFor(model => model.Text, "", new { @class = "text-danger" })
+                    <div class="row">
+                        <div class="form-group">
+                            <div>
+                                @Html.ValidationMessageFor(model => model.Subject, "", new { @class = "text-danger" })
+                                @Html.EditorFor(model => model.Subject, new {htmlAttributes = new {@class = "form-control", placeholder = @Html.DisplayNameFor(m => m.Subject)}})
+                                @*@Html.ValidationMessageFor(model => model.Subject, "", new { @class = "text-danger" })*@
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                   <div class="row">
-                       <div class="col-sm-6 col-sm-offset-3">
-                           <input type="submit" value="Изпрати">
-                       </div>
-                   </div>
-               }
+                    <div class="row">
+                        <div class="form-group">
+                            <div>
+                                @Html.ValidationMessageFor(model => model.Text, "", new { @class = "text-danger" })
+                                @Html.TextAreaFor(model => model.Text, new {@class = "form-control", placeholder = @Html.DisplayNameFor(m => m.Text)})
+                                @*@Html.ValidationMessageFor(model => model.Text, "", new { @class = "text-danger" })*@
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3">
+                            <input type="submit" value="Изпрати">
+                        </div>
+                    </div>
+                }
             </div>
         </div>
     </div>
 
     <div class="row wiwet-skript-our-location fadeLeftRight">
         <div class="col-sm-7 col-md-9 fadeLeftEffect">
-           <img src="/Content/images/blurcontacts.jpg"/>
+            <img src="/Content/images/blurcontacts.jpg" />
         </div>
         <div class="col-sm-5 col-md-3 fadeRightEffect">
             <div>
-                
+
                 <h2>СВЪРЖИ СЕ С НАС</h2>
                 <span>
                     <i class="fa fa-circle"></i>
@@ -100,7 +107,7 @@
                     <a href="mailto:officegreenhome.bg@gmail.com">officegreenhome.bg@gmail.com</a>
                 </p>
 
-                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.facebook.com/GreenHomeBulgaria/?fref=ts"><i class="fa fa-facebook"></i></a>
                 <a href="#"><i class="fa fa-twitter"></i></a>
                 <a href="#"><i class="fa fa-linkedin"></i></a>
                 <a href="#"><i class="fa fa-google-plus"></i></a>

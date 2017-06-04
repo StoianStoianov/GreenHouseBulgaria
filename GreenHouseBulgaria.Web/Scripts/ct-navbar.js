@@ -25,6 +25,9 @@ $(document).ready(function(){
         } 
     });
    $(".dropdown").hover(function () {
+       if($(document).width() < 767) {
+           return;
+       }
        $(".dropdown-menu", this).slideDown();
    });
    $(".dropdown").mouseleave(function () {

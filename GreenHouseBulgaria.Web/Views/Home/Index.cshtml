@@ -100,10 +100,8 @@
                     {
                         break;
                     }
-                    <a href="@Url.Action("GetService","PublicServices", new {serviceId = Model[j].Id})">
-                        <div class="col-md-4">
-                            <div>
-                                <div>
+                    <a class="circle-service-link" href="@Url.Action("GetService","PublicServices", new {serviceId = Model[j].Id})">
+                        <div class="col-md-4">                         
                                     @if (Model[j].Image != null)
                                     {
                                         string imageBase64 = Convert.ToBase64String(Model[j].Image.ImageBytes);
@@ -113,10 +111,8 @@
                                     else
                                     {
                                         <img src="http://lorempixel.com/200/200/abstract/1/" alt="Texto Alternativo" class="img-circle img-thumbnail">
-                                    }
-                                </div>
-                                <h2>@Model[j].Title</h2>
-                            </div>
+                                    } 
+                                    <h2 class="circle-service">@Model[j].Title</h2>                              
                         </div>
                     </a>
                     }

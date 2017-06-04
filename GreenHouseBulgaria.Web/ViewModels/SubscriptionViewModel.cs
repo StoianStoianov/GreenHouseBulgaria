@@ -10,20 +10,21 @@ namespace GreenHouseBulgaria.Web.ViewModels
     public class SubscriptionViewModel
     {     
         public int Id { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Името е задължително")]
         [Display(Name = "Име")]
         public string SubscriberName { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Адресът е задължителен")]
         [Display(Name = "Адрес")]
         public string Adress { get; set; }
-        [RegularExpression(@"^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$", ErrorMessage = "Not a valid Phone number")]
+        [Required(ErrorMessage = "Телефонният номер е задължителен")]
+        [RegularExpression(@"^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$", ErrorMessage = "Невалиден номер")]
         [Display(Name = "Телефонен номер")]
         public string TelephoneNumber { get; set; }
-        [Required]
-        [EmailAddress]
-        [Display(Name = "Email")]
+        [Required(ErrorMessage = "Мейлът е задължителен")]
+        [EmailAddress(ErrorMessage = "Невалиден мейл адрес")]
+        [Display(Name = "Мейл")]
         public string Email { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Датата е задължителна")]
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd/MM/yyyy}")]
         [Display(Name = "Дата")]
         public DateTime? SubscriptionDateTime { get; set; }

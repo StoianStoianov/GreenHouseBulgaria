@@ -61,6 +61,21 @@
     font-weight: bold;
 }
 
+.circle-service-link:hover {
+    text-decoration: none;
+}
+
+.img-circle {
+    display: block;
+    margin: auto;
+}
+
+.circle-service {
+    font-size: 32px;
+    color: #0b9444;
+}
+
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: inherit;
     font-weight: 500;
@@ -71,6 +86,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .who-we-are h2 i {
     font-size: 0.6em;
+}
+
+.wiwet-skript-our-location h2 {
+    text-align: left;
 }
 
 .service-paragraph {
@@ -99,7 +118,7 @@ footer span {
 @media screen and (max-width: 1200px) and (min-width: 992px) {
     .navbar .navbar-nav p {
         margin: 12px !important;
-        font-size: 19px!important;
+        font-size: 19px !important;
         /*margin-top: 15px;
         font-size: 20px;
         color: #8f2225;
@@ -113,24 +132,29 @@ footer span {
         font-size: 20px;
     }
 
-    .menu-last-item div p  {
+    .menu-last-item div p {
         padding-top: 10px;
     }
 
-    @-moz-document url-prefix() { 
- .menu-last-item .label {
-   position: absolute;
-    left: 25px;
-    top: 19px!important;
- }
-}
+    @-moz-document url-prefix() {
+        .menu-last-item .label {
+            position: absolute;
+            left: 25px;
+            top: 19px !important;
+        }
+    }
+
+    .join-skript h3 {
+        font-size: 25px;
+    }
+  
 }
 
 @media screen and (max-width: 991px) and (min-width: 768px) {
     .navbar .navbar-nav p {
         margin: 0 !important;
         margin-top: 17px !important;
-        font-size: 16px !important;
+        font-size: 15px !important;
     }
 
     .menu-last-item .label {
@@ -153,5 +177,9 @@ footer span {
             left: 25px;
             top: 23px !important;
         }
+    }
+
+    .join-skript h3 {
+        font-size: 19px;
     }
 }
