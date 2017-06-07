@@ -1,0 +1,14 @@
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Models\bin\Release\GreenHouseBulgaria.Models.dll.config
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Models\bin\Release\GreenHouseBulgaria.Models.dll
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Models\bin\Release\GreenHouseBulgaria.Models.pdb
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Models\bin\Release\EntityFramework.dll
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Models\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Models\bin\Release\Microsoft.AspNet.Identity.Core.dll
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Models\bin\Release\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Models\bin\Release\EntityFramework.xml
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Models\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Models\bin\Release\Microsoft.AspNet.Identity.Core.xml
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Models\bin\Release\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Models\obj\Release\GreenHouseBulgaria.Models.csprojResolveAssemblyReference.cache
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Models\obj\Release\GreenHouseBulgaria.Models.dll
+C:\Users\stoia\documents\visual studio 2015\Projects\GreenHouseBulgaria\GreenHouseBulgaria.Models\obj\Release\GreenHouseBulgaria.Models.pdb

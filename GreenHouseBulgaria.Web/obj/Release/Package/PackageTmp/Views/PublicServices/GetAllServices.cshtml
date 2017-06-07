@@ -1,0 +1,234 @@
+﻿@model List<GreenHouseBulgaria.Web.ViewModels.ServiceViewModel>
+@{
+    ViewBag.Title = "GetAllServices";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    int colorHelperCounter = 0;
+    string colorStyle = "green";
+}
+
+@*<h2>GetAllServices</h2>
+
+    @foreach (var service in Model)
+    {
+        <div>
+            <h3>@service.Title</h3>
+            @foreach (var servicePrice in service.ServicePriceViewModels)
+            {
+                <div>
+                    <h4>@servicePrice.Title</h4>
+                    <div>@servicePrice.Description</div>
+                    <div>@servicePrice.Price</div>
+                    <div>@Html.ActionLink("Поръчай", "SubscribeForService", "Subscription", new { servicePriceId = servicePrice.Id }, null)</div>
+                </div>
+            }
+
+
+        </div>
+
+
+    }*@
+
+@{
+    ViewBag.Title = "Services";
+}
+
+<style>
+    .columns {
+        float: left;
+        width: 33.3%;
+        padding: 8px;
+    }
+
+    /* Style the list */
+    .price {
+        list-style-type: none;
+        border: 1px solid #eee;
+        margin: 0;
+        padding: 0;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+    }
+
+        /* Add shadows on hover */
+        .price:hover {
+            box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+        }
+
+        /* Pricing header */
+        .price .header {
+            background-color: #111;
+            color: white;
+            font-size: 20px;
+        }
+
+           .price .header-green {
+                background-color: #0b9444;
+                color: white;
+                font-size: 20px;
+            }
+
+            .price .header-blue {
+                background-color: #085327;
+                color: white;
+                font-size: 20px;
+            }
+
+            
+            .price .header-red {
+                background-color: #0a7436;
+                color: white;
+                font-size: 20px;
+            }
+
+            .price .header-grey {
+                background-color: #083f1f;
+                color: white;
+                font-size: 20px;
+            }
+
+        /* List items */
+        .price li {
+            border-bottom: 1px solid #eee;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Grey list item */
+        .price .grey {
+            background-color: #eee;
+            font-size: 20px;
+        }
+
+    /* The "Sign Up" button */
+    .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 10px 25px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .price {
+        font-size: 2em;
+    }
+
+    /* Change the width of the three columns to 100%
+    (to stack horizontally on small screens) */
+    @@media only screen and (max-width: 600px) {
+        .columns {
+            width: 100%;
+        }
+    }
+</style>
+
+<div class="page-wrap">
+    <div class="page-name titleAnimation">
+        <h1>Нашите услуги</h1>
+       
+    </div>
+
+    <div class="container">
+        <div class="row wiwet-welcome fadeUpEffect">
+            <div class="col-sm-8 col-sm-offset-2 text-center wiwet-skript-contact">
+                <h2>КАКВО ПРЕДЛАГАМЕ НИЕ</h2>
+                <h6 class="three-dot-line">
+                    <span>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                    </span>
+                </h6>
+                <p class = "service-paragraph">
+                    Ние ще Ви предложим най-добрия вариант за перфектна хигиена у дома или в офиса изцяло съобразено с Вашите нужди!
+                </p>
+            </div>
+        </div>
+
+        <div class="wiwet-skript-tabs fadeUpEffect1">
+
+            <ul class="nav" role="tablist">
+                <li role="presentation" class="active">
+                    <a href="#service1" aria-controls="@Model[0].Title" role="tab" data-toggle="tab">@Model[0].Title</a>
+                    <span>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                    </span>
+                </li>
+                @for (int i = 1; i < Model.Count; i++)
+                {
+                    <li role="presentation">
+                        <a href="#service@(i+1)" aria-controls="@Model[i].Title" role="tab" data-toggle="tab">@Model[i].Title</a>
+                        <span>
+                            <i class="fa fa-circle"></i>
+                            <i class="fa fa-circle"></i>
+                            <i class="fa fa-circle"></i>
+                        </span>
+                    </li>
+                }
+            </ul>
+
+            <div class="tab-content">
+                @for (int i = 0; i < Model.Count; i++)
+                {
+                    string classValue = string.Empty;
+
+                    if (i == 0)
+                    {
+                        classValue = "in active";
+                    }
+
+
+                    <div id="service@(i+1)" class="tab-pane fade @classValue" role="tabpanel">
+                        <div class="row">
+                            @foreach (var price in Model[i].ServicePriceViewModels)
+                            {
+                                if (colorHelperCounter == 0)
+                                {
+                                    colorStyle = "green";
+                                }
+                                else if (colorHelperCounter == 1)
+                                {
+                                    colorStyle = "red";
+                                }
+                                else if (colorHelperCounter == 2)
+                                {
+                                    colorStyle = "blue";
+                                }
+                                else if (colorHelperCounter == 3)
+                                {
+                                    colorStyle = "grey";
+                                }
+                                <div class="columns">
+                                    <ul class="price">
+                                        <li class="header-@colorStyle">@price.Title</li>
+                                        <li class="grey">@price.Description</li>
+                                        <li>@price.Price</li>
+
+                                        <li class="grey"><a href="@Url.Action("SubscribeForService", "Subscription", new {servicePriceId = price.Id})" class="button">Поръчай</a></li>
+                                    </ul>
+                                </div>
+
+
+                                colorHelperCounter++;
+
+                            }
+                        </div>
+                    </div>
+
+                      
+                            colorHelperCounter = 0;
+                            colorStyle = "green";
+
+                        
+
+                            }
+
+
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,19 @@
+﻿@model List<GreenHouseBulgaria.Web.ViewModels.SubscriptionViewModel>
+@{
+    ViewBag.Title = "ViewSubscriptions";
+}
+
+<h2>ViewSubscriptions</h2>
+
+
+@foreach (var item in Model)
+{
+    <div>
+        @*<span>@item.ServicePriceViewModel.Description</span>*@
+        <span>@item.SubscriberName</span>
+        <span>@item.SubscriptionDateTime</span>
+        <span>@item.TelephoneNumber</span>
+        <span>@Html.ActionLink("Виж подробно","CheckSubscription","Subscriptions", new { subscriptionId = @item.Id }, null)</span>
+
+    </div>
+}

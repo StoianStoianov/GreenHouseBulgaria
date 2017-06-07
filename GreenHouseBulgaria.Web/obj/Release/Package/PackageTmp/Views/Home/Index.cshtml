@@ -1,0 +1,305 @@
+﻿
+@model List<GreenHouseBulgaria.Web.ViewModels.ServiceViewModel>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@{
+    var servicesRows = Model.Count / 3 + 1;
+}
+
+
+<div class="page-wrap">
+    <div id="carousel-home" class="carousel slide animated fadeIn" data-ride="carousel">
+
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="/Content/Images/sliderBlurryEffect.jpg">
+                <div class="carousel-caption">
+                    <h1>
+                        Професионална грижа за вашия дом или офис
+                        <span>
+                            <i class="fa fa-circle"></i>
+                            <i class="fa fa-circle"></i>
+                            <i class="fa fa-circle"></i>
+                        </span>
+                    </h1>                   
+                    @*<a href="#">EXPLORE IT</a>*@
+                    @Html.ActionLink("ПОРЪЧАЙ", "GetAllServices", "PublicServices")
+                </div>
+            </div>
+
+            @*<div class="item">
+                <img src="Content/Images/slider2.jpg"width="1500" height="844">
+                <div class="carousel-caption">
+                    <h1>
+                        THE PERFECT
+                        <span>
+                            <i class="fa fa-circle"></i>
+                            <i class="fa fa-circle"></i>
+                            <i class="fa fa-circle"></i>
+                        </span>
+                    </h1>
+                    <h3>Corporate Template You Can Use</h3>
+                    <a href="#">EXPLORE IT</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="Content/Images/slider3.jpg">
+                <div class="carousel-caption">
+                    <h1>
+                        AN EASY
+                        <span>
+                            <i class="fa fa-circle"></i>
+                            <i class="fa fa-circle"></i>
+                            <i class="fa fa-circle"></i>
+                        </span>
+                    </h1>
+                    <h3>Interface To Manipulate</h3>
+                    <a href="#">EXPLORE IT</a>
+                </div>
+            </div>*@
+
+
+        </div>
+
+        @*<a class="left carousel-control" href="#carousel-home" role="button" data-slide="prev">
+            <img src="Content/Images/carousel-left.png">
+        </a>
+
+        <a class="right carousel-control" href="#carousel-home" role="button" data-slide="next">
+            <img src="Content/Images/carousel-right.png">
+        </a>*@
+    </div>
+
+
+    <div class="container fadeUpEffect">
+        @*<div class="row wiwet-welcome">
+            <div class="col-sm-8 col-sm-offset-2 text-center wiwet-skript-contact">
+                <h3>WHY CHOOSING</h3>
+                <h2>SKRIPT?</h2>
+                <h6 class="three-dot-line">
+                    <span>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                    </span>
+                </h6>
+
+            </div>
+        </div>*@
+
+        <div class="row wiwet-under-welcome why-choose-skript">
+            @for (int i = 0; i < servicesRows; i++)
+            {
+                <div class="row stylish-panel">
+                    @for (int j = i * 3; j < i * 3 + 3; j++)
+                {
+                    if (j == Model.Count)
+                    {
+                        break;
+                    }
+                    <a class="circle-service-link" href="@Url.Action("GetService","PublicServices", new {serviceId = Model[j].Id})">
+                        <div class="col-md-4">                         
+                                    @if (Model[j].Image != null)
+                                    {
+                                        string imageBase64 = Convert.ToBase64String(Model[j].Image.ImageBytes);
+                                        string imageSrc = string.Format("data:image/gif;base64,{0}", imageBase64);
+                                        <img src="@imageSrc" alt="Texto Alternativo" class="img-circle" width="300" height="250">
+                                    }
+                                    else
+                                    {
+                                        <img src="http://lorempixel.com/200/200/abstract/1/" alt="Texto Alternativo" class="img-circle img-thumbnail">
+                                    } 
+                                    <h2 class="circle-service">@Model[j].Title</h2>                              
+                        </div>
+                    </a>
+                    }
+
+                </div>
+            }
+           
+        </div>
+
+    </div>
+
+
+    <section class="row who-we-are fadeLeftRight">
+        <div class="col-sm-6 fadeLeftEffect">
+            <div>
+                <h3>Защо да изберете нас?</h3>
+                @*<h2>3 причини да изберете Green Home Bulgaria:</h2>*@
+                <h2>
+                    3 причини да изберете Green Home Bulgaria:<br/>
+                    <i class="fa fa-circle"></i>
+                    <i class="fa fa-circle"></i>
+                    <i class="fa fa-circle"></i>
+                </h2>
+                <p>
+                    1) Може да разчитате на нас за почистване през работния ден, късно вечерта или дори през почивните дни без това да оскъпи услугата допълнително.<br/>
+                    2) Защото Вие заслужавате най-доброто и качествено обслужване на най-ниските цени!<br/>
+                    3) При поръчка на абонамент получавате промоционална цена, която е по-ниска от цената за еднократно почистване. Всеки път ще бъдете посещавани от една и съща помощница, а при желание лесно можете да я замените с друга без да се чувствате неудобно от това!<br/>
+
+                    Поръчайте експертното почистване, от което Вашият дом/офис се нуждае!
+
+                    Ние оперираме на територията на гр.София, гр.Перник и гр.Бургас.
+
+                </p>
+                @Html.ActionLink("НАУЧИ ПОВЕЧЕ", "About", "Home")
+            </div>
+        </div>
+
+        <div class="col-sm-6 fadeRightEffect">
+            <img src="Content/Images/whyus.jpg">
+        </div>
+    </section>
+
+
+
+    <div class="container">
+        <div class="row wiwet-welcome fadeUpEffect1">
+            <div class="col-sm-8 col-sm-offset-2 text-center wiwet-skript-contact">
+                @*<h3>OUR OFFER</h3>
+                <h2>WITH SKRIPT</h2>
+                <h6 class="three-dot-line">
+                    <span>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                    </span>
+                </h6>*@
+
+            </div>
+        </div>
+
+        <div class="row our-offer fadeLeftRight1">
+            <div class="col-sm-6 fadeLeftEffect1">
+                <h4>Качество – една дума, с която НЕ правим компромис!</h4>
+                <h6>
+                    <i class="fa fa-circle"></i>
+                    <i class="fa fa-circle"></i>
+                    <i class="fa fa-circle"></i>
+                </h6>
+                <p>
+                    Нашата цел: да създаваме чистота и уют, за да се чувствате Вие комфортно!
+                    Екипът на Green Home Bulgaria подхожда изключително прецизно във всички етапи на услугата – от първата среща с клиента до постигане на блестящ краен резултат.
+                    Избирайки екипът на Green Home Bulgaria Вие избирате екип от професионално обучени служители, точни срокове на изпълнение, коректност, високи стандарти на качеството и ниски цени.
+
+                </p>
+            </div>
+            <div class="col-sm-6 text-center fadeRightEffect1">
+                <img src="Content/Images/illustration.png">
+            </div>
+
+        </div>
+    </div>
+
+    @*<section class="our-clients-speak fadeUpEffect2">
+        <div class="container">
+            <div class="row wiwet-welcome">
+                <div class="col-sm-8 col-sm-offset-2 text-center">
+                    <h3>WHAT THEY SAY</h3>
+                    <h2>OUR CLIENTS SPEAKS</h2>
+                    <h6 class="three-dot-line">
+                        <div class="left-line pull-left"></div>
+                        <div class="right-line pull-right"></div>
+                        <div class="clearfix"></div>
+                        <span>
+                            <i class="fa fa-circle"></i>
+                            <i class="fa fa-circle"></i>
+                            <i class="fa fa-circle"></i>
+                        </span>
+                    </h6>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut a liquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
+                    </p>
+                </div>
+                <div class="col-sm-8 col-sm-offset-2 client-say">
+
+                    <p class="client-words">
+                        <span>“</span>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volupt
+                        ate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis
+                        iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explic.
+                        <span>”</span>
+                    </p>
+
+                    <div class="row client-name">
+                        <div class="col-xs-2">
+                            <img src="Content/Images/jane-ceo.png">
+                        </div>
+                        <div class="col-xs-10">
+                            <h2>JANE DOE</h2>
+                            <h6>
+                                <span>
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-circle"></i>
+                                </span>
+                            </h6>
+                            <p>CEO - SKRIPT</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>*@
+
+    @*<div class="container fadeUpEffect3 countNumbers">
+        <div class="row wiwet-welcome">
+            <div class="col-sm-8 col-sm-offset-2 text-center wiwet-skript-contact">
+                <h3>YES WE DID</h3>
+                <h2>OUR ACHIEVEMENTS</h2>
+                <h6 class="three-dot-line">
+                    <span>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                    </span>
+                </h6>
+
+            </div>
+        </div>
+
+        <div class="row our-achievements">
+
+            <div class="col-xs-6 col-md-3 text-center">
+                <img src="Content/Images/share.png">
+                <h3>+ <span class="count-shares">3456</span></h3>
+                <p>Share</p>
+            </div>
+
+
+            <div class="col-xs-6 col-md-3 text-center">
+                <img src="Content/Images/sales.png">
+                <h3>+ <span class="count-sales">1569</span></h3>
+                <p>Sales</p>
+            </div>
+
+
+            <div class="col-xs-6 col-md-3 text-center">
+                <img src="Content/Images/likes.png">
+                <h3>+ <span class="count-likes">4536</span></h3>
+                <p>Likes</p>
+            </div>
+
+            <div class="col-xs-6 col-md-3 text-center">
+                <img src="Content/Images/community.png">
+                <h3>+ <span class="count-member">2698</span></h3>
+                <p>Member</p>
+            </div>
+
+
+        </div>
+
+    </div>*@
+
+
+</div>

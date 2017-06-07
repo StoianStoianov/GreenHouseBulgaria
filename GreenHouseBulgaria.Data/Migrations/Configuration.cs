@@ -36,7 +36,9 @@ namespace GreenHouseBulgaria.Data.Migrations
                 var store = new UserStore<User>(context);
                 var manager = new UserManager<User>(store);
                 var user = new User { UserName = defaultUser };
-                manager.Create(user, "sotajiq");
+                manager.Create(user, "greenhomejinoadmin011235");
+                user.Email = "jinoivanov13@gmail.com";
+                user.EmailConfirmed = true;
 
                 manager.AddToRole(user.Id, defaultRole);
             }

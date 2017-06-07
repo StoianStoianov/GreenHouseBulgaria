@@ -1,0 +1,53 @@
+﻿@model IList<GreenHouseBulgaria.Web.ViewModels.ServiceViewModel>
+@{
+    ViewBag.Title = "ServicesNavigation";
+}
+
+
+<ul class="nav navbar-nav navbar-right">   
+    <li class="first-menu-item">
+        <a href="@Url.Action("Index", "Home")">
+            <i class="pe-7s-mail">
+                <span class="label"></span>
+            </i>
+            <p>Начало</p>
+        </a>
+    </li>
+     <li>
+        <a href="@Url.Action("About", "Home")">
+            <i class="pe-7s-mail">
+                <span class="label"></span>
+            </i>
+            <p>За нас</p>
+        </a>
+    </li>
+    <li class="dropdown">
+        <a href="@Url.Action("GetAllServices", "PublicServices")">
+            <i class="pe-7s-user"></i>
+            <p>Услуги</p>
+        </a>
+        <ul class="dropdown-menu">
+            @foreach (var service in @Model)
+            {
+                <li>@Html.ActionLink(@service.Title, "GetService", "PublicServices", new { serviceId = service.Id }, null) </li>
+            }
+        </ul>
+    </li>
+    <li>
+        <a href="@Url.Action("Contact", "ContactMessage")">
+            <i class="pe-7s-mail">
+                <span class="label"></span>
+            </i>
+            <p>Контакти</p>
+        </a>
+    </li>
+    <li class="menu-last-item">
+        <div>
+            <i class="pe-7s-mail">
+                <span class="label">Обади се сега</span>
+            </i>
+            <p><a href="tel:359896963870">+(359)-896-963-870</a></p>
+        </div>
+    </li>
+</ul>
+

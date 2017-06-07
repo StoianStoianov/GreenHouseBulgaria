@@ -479,6 +479,7 @@
     <Content Include="Areas\Admin\Views\Subscriptions\CheckSubscription.cshtml" />
     <Content Include="Areas\Admin\Views\AdminHome\Index.cshtml" />
     <Content Include="Content\images\whyus.jpg" />
+    <None Include="Properties\PublishProfiles\GreenHomeBulgaria.pubxml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\ct-navbar.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />

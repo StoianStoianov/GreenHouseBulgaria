@@ -1,0 +1,30 @@
+﻿@model GreenHouseBulgaria.Web.ViewModels.SubscriptionViewModel
+
+@{
+    ViewBag.Title = "CheckSubscription";
+}
+
+<h2>CheckSubscription</h2>
+
+<div>
+    <h4>SubscriptionViewModel</h4>
+    <hr />
+    <div>Абониран за: @Model.ServicePriceViewModel.ServiceViewModel.Title<br/> @Model.ServicePriceViewModel.Title <br> @Model.ServicePriceViewModel.Description</div>
+    <div>@Model.SubscriberName</div>
+    <div>@Model.Adress</div>
+    <div>@Model.Email</div>
+    <div>@Model.SubscriptionDateTime</div>
+@using (Html.BeginForm())
+{
+    @Html.CheckBox("isChecked")
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Маркирай като проверен" class="btn btn-default" />
+        </div>
+    </div>
+}
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

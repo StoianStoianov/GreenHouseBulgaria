@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")   
+    <link href="~/Content/ct-navbar.css" rel="stylesheet" />
+    @Scripts.Render("~/bundles/modernizr")
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->   
+</head>
+<body>
+    @*<div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-5">
+                    <a href="mailto:officegreenhome.bg@gmail.com"><i class="fa fa-envelope-o"></i> officegreenhome.bg@gmail.com</a>
+                </div>
+                <div class="col-xs-7 text-right">
+                    <a href="https://www.facebook.com/GreenHomeBulgaria/?fref=ts"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                    <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>*@
+
+    <div id="navbar-full">
+        <div id="navbar">
+            <!--
+             navbar-default can be changed with navbar-ct-blue navbar-ct-azzure navbar-ct-red navbar-ct-green navbar-ct-orange
+             -->
+            <nav class="navbar navbar-ct-blue navbar-fixed-top navbar-transparent" role="navigation">
+                <div class="top-bar">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <a href="mailto:officegreenhome.bg@gmail.com"><i class="fa fa-envelope-o"></i> officegreenhome.bg@gmail.com</a>
+                            </div>
+                            <div class="col-xs-7 text-right">
+                                <a href="https://www.facebook.com/GreenHomeBulgaria/?fref=ts"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                                <a href="#"><i class="fa fa-dribbble"></i></a>
+                                <a href="#"><i class="fa fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand navbar-brand-logo" href="@Url.Action("Index", "Home")">                         
+                        <img src="/Content/images/siteLogo.png"width="210" height="60">                                                   
+                        </a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        @*<ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="javascript:void(0);" data-toggle="search" class="hidden-xs">
+                                    <i class="pe-7s-search"></i>
+                                    <p>Search</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="pe-7s-mail">
+                                        <span class="label">23</span>
+                                    </i>
+                                    <p>Messages</p>
+                                </a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="pe-7s-user"></i>
+                                    <p>Account</p>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>*@
+                        @Html.Action("ServicesNavigation", "Home")
+                        @*<form class="navbar-form navbar-right navbar-search-form" role="search">
+                            <div class="form-group">
+                                <input type="text" value="" class="form-control" placeholder="Search...">
+                            </div>
+                        </form>*@
+
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>                  
+        </div><!--  end navbar -->
+    </div> <!-- end menu-dropdown -->
+
+    @RenderBody()
+    <footer>
+        <section class="join-skript">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-9">                        
+                        <h3>ПРОФЕСИОНАЛНА <span>ГРИЖА ЗА</span><br class="visible-xs"> ВАШИЯ <span>ДОМ ИЛИ ОФИС</span></h3>
+                    </div>
+                    <div class="col-sm-3">
+                        @Html.ActionLink("ПОРЪЧАЙ", "GetAllServices", "PublicServices")
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container top-footer">         
+            <div class="row">
+                @*<div class="col-sm-3">
+                    <a class="logo" href="/"><img src="/Content/Images/logo-footer.png"></a>
+                    <p>
+                        Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmo d tempor incididunt ut
+                        labore et dol ore magna aliqua. Ut enim ad mini m veniam, quis nostrud
+                        xercitation ullamco laboris nisi ut aliquip.
+                    </p>
+                </div>
+                <div class="col-sm-3">
+                    <h4>RECENT POSTS</h4>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-circle"></i> Lorem ipsum dolor sit amet</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Lorem ipsum dolor sit amet</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Lorem ipsum dolor sit amet</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i> Lorem ipsum dolor sit amet</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h4>TAGS</h4>
+                    <div class="row">
+                        <div class="col-xs-4"><a href="#">Tech</a></div>
+                        <div class="col-xs-8"><a href="#">Finance Stratgey</a></div>
+                        <div class="col-xs-8"><a href="#">Global Management</a></div>
+                        <div class="col-xs-4"><a href="#">Design</a></div>
+                        <div class="col-xs-6"><a href="#">Visual</a></div>
+                        <div class="col-xs-4"><a href="#">Technical</a></div>
+                        <div class="col-xs-2"><a href="#">HR</a></div>
+                        <div class="col-xs-4"><a href="#">Services</a></div>
+                        <div class="col-xs-4"><a href="#">Material</a></div>
+                        <div class="col-xs-4"><a href="#">Value</a></div>
+                    </div>
+                </div>*@
+             
+                  
+                   
+                <div class="col-md-6"><span class="footer-content"><img src="/Content/Images/phoneWhtie.png" width="40" height="27"><a href="tel:359896963870">+(359)-896-963-870</a></span></div>
+                <div class="col-md-6"><span class="footer-content-mail"><img src="/Content/Images/emailWhite.png" width="40" height="27"> <a href="mailto:contact@skript.com">officegreenhome.bg@gmail.com</a></span></div>
+                
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>All rights reserved</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="https://www.facebook.com/GreenHomeBulgaria/?fref=ts"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                        <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                        <a href="#"><i class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+        @Scripts.Render("~/bundles/jquery")        
+        @Scripts.Render("~/bundles/bootstrap")
+        @Scripts.Render("~/bundles/wiwet")
+
+        @RenderSection("scripts", required: false)
+       
+    @*<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery.scrollbar.min.js"></script>
+    <script src="~/Scripts/jquery.countTo.js"></script>
+    <script src="~/Scripts/jquery.waypoints.min.js"></script>
+    <script src="~/Scripts/wiwet.template.js"></script>*@
+
+    <script src="~/Scripts/ct-navbar.js"></script>
+</body>
+</html>
