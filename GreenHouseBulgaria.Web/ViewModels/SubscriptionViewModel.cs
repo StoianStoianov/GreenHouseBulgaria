@@ -22,7 +22,7 @@ namespace GreenHouseBulgaria.Web.ViewModels
         public string TelephoneNumber { get; set; }
         [Required(ErrorMessage = "Мейлът е задължителен")]
         [EmailAddress(ErrorMessage = "Невалиден мейл адрес")]
-        [Display(Name = "Мейл")]
+        [Display(Name = "Имейл")]
         public string Email { get; set; }
         [Required(ErrorMessage = "Датата е задължителна")]
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd/MM/yyyy}")]

@@ -141,6 +141,15 @@ TestWiwitIntegration Template
 	.skript-colors > div{
 		margin-bottom: 80px;
 	}
+
+    .footer-mail-wrapper {
+    margin-top: 10px;
+    }
+
+    .footer-content-mail {
+        float: left;
+    }
+
 }
 @media only screen and (max-width: 767px){
 	.top-bar .row div:last-child a{

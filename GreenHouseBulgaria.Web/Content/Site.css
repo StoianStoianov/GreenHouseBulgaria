@@ -96,9 +96,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     text-align: center !important;
 }
 
-.footer-content-mail {
-    float: right;
+.contact-pic {
+    max-width:100%;
+    max-height:100%;
 }
+
 
 .top-footer > .row {
     padding: 15px;
@@ -182,4 +184,5 @@ footer span {
     .join-skript h3 {
         font-size: 19px;
     }
+
 }

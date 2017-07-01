@@ -15,7 +15,7 @@ namespace GreenHouseBulgaria.Web.ViewModels
         public string FullName { get; set; }
         [Required(ErrorMessage = "Мейлът е задължителен")]
         [EmailAddress(ErrorMessage = "Невалиден мейл адрес")]
-        [Display(Name = "Мейл")]
+        [Display(Name = "Имейл")]
         public string Email { get; set; }
         [Required(ErrorMessage = "Темата е задължителна")]
         [Display(Name = "Тема")]

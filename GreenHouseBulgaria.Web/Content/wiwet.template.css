@@ -108,6 +108,11 @@ textarea:focus{
 	line-height: 57px;
 	margin-top: 26px;
 }
+
+    .join-skript a:hover {
+        text-decoration: none;
+        color: #8f2225;
+    }
 footer{
 	/*padding-top: 70px;*/
 	background: #1f1f1f;

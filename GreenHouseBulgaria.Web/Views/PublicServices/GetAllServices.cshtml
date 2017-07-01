@@ -110,6 +110,11 @@
         font-size: 18px;
     }
 
+    .button:hover {
+        text-decoration: none; 
+        color: #8f2225;
+    }
+
     .price {
         font-size: 2em;
     }
@@ -207,7 +212,7 @@
                                         <li class="grey">@price.Description</li>
                                         <li>@price.Price</li>
 
-                                        <li class="grey"><a href="@Url.Action("SubscribeForService", "Subscription", new {servicePriceId = price.Id})" class="button">Поръчай</a></li>
+                                        <li class="grey"><a href="@Url.Action("SubscribeForService", "Subscription", new {servicePriceId = price.Id})" class="button">ПОРЪЧАЙ</a></li>
                                     </ul>
                                 </div>
 
